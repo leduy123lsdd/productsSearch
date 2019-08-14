@@ -10,30 +10,14 @@ import UIKit
 
 class firstViewController: UITableViewController {
     
-    var imageData = [[UIImage]]()
+    var imageData = [ Int: [imageDetail] ]()
+    var images = [UIImage]()
+    
     //MARK: - Data stored
     var listOfProducts = [productDetail](){
         didSet {
             DispatchQueue.main.async {
-//                if let imageUrl = data.images {
-//                    if imageUrl.isEmpty {
-//                        cell.imageProduct.image = UIImage(named: "image_unavailable")
-//                    } else {
-//                        let _url = URL(string: imageUrl[0].url!)
-//                        cell.imageProduct.loadImage(url: _url!)
-//                    }
-//                }
-//                for data in self.listOfProducts {
-//
-//                    if let imageUrl = data.images {
-//                        if imageUrl.isEmpty {
-//                            return
-//                        } else {
-//                            let _url = URL(string: imageUrl[0].url!)
-//
-//                        }
-//                    }
-//                }
+                self.distributeImage()
                 self.tableView.reloadData()
             }
         }
@@ -41,14 +25,42 @@ class firstViewController: UITableViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     
+    var index = 0
+    
+    func distributeImage() {
+        
+        for data in listOfProducts {
+            //Lay ra cac mang chua url
+            imageData[index] = data.images
+            index += 1
+        }
+        index -= 1
+        //load throw singer image array
+        for key in 0...index {
+            //get image array by key
+            if let imagesArray = imageData[key] {
+                //check if image array is empty
+                if imagesArray.isEmpty {
+                    images.append(UIImage(named: "image_unavailable")!)
+                }
+                else {
+                    if let url = URL(string: imagesArray[0].url!) {
+//                        images[key] = loadImage(url: url)
+                        images.append(loadImage(url: url))
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         tableView.keyboardDismissMode = .onDrag
-//        searchBar.showsCancelButton = true
-//        searchBar.setShowsCancelButton(true, animated: true)
         let hideKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
         tableView.addGestureRecognizer(hideKeyboard)
     }
@@ -71,18 +83,21 @@ class firstViewController: UITableViewController {
             let price = (String)(data.price.sellPrice ?? 0)
             cell.price.text = (price != "0" ? "\(price) vnd" : "No information about price")
             
-            if let imageUrl = data.images {
-                if imageUrl.isEmpty {
-                    cell.imageProduct.image = UIImage(named: "image_unavailable")
-                } else {
-                    if let _url = URL(string: (imageUrl[0].url)!) {
-                        cell.imageProduct.loadImage(url: _url)
-                    }
-                    else {
-                        cell.imageProduct.image = UIImage(named: "image_unavailable")
-                    }
-                }
-            }
+//            if let imageUrl = data.images {
+//                if imageUrl.isEmpty {
+//                    cell.imageProduct.image = UIImage(named: "image_unavailable")
+//                } else {
+//                    if let _url = URL(string: (imageUrl[0].url)!) {
+//                        cell.imageProduct.loadImage(url: _url)
+//                    }
+//                    else {
+//                        cell.imageProduct.image = UIImage(named: "image_unavailable")
+//                    }
+//                }
+//            }
+            
+            print(self.images.count)
+            cell.imageProduct.image = self.images[indexPath.row]
         }
         
         
@@ -119,13 +134,11 @@ class firstViewController: UITableViewController {
 //MARK: - Search bar
 extension firstViewController: UISearchBarDelegate {
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-//        searchBar.showsCancelButton = true
         searchBar.setShowsCancelButton(true, animated: true)
 
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-//        searchBar.showsCancelButton = false
         searchBar.setShowsCancelButton(false, animated: true)
         guard let searchBarText = searchBar.text else {
             return
@@ -137,8 +150,12 @@ extension firstViewController: UISearchBarDelegate {
             let productsRequest = productRequest(page: 1, limit: 10, query: searchBarText)
             productsRequest.getProduct { [weak self] rs in
                 switch rs {
-                case .failure(let error): print(error)
-                case .success(let products): self?.listOfProducts = products
+                case .failure(let error):
+                    print(error)
+                    return
+                case .success(let products):
+                    self?.listOfProducts += products
+                    return
                 }
             }
         }
@@ -147,27 +164,33 @@ extension firstViewController: UISearchBarDelegate {
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.endEditing(true)
-//        searchBar.showsCancelButton = false
         searchBar.setShowsCancelButton(false, animated: true)
-        
-        
-
     }
 }
 
 //MARK: - load image by url
-extension UIImageView {
-    func loadImage(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                DispatchQueue.main.async {
-                    if let image = UIImage(data: data) {
-                        self?.image = image
-                    } else {
-                        self?.image = UIImage(named: "image_unavailable")
-                    }
-                }
+//extension UIImageView {
+//    func loadImage(url: URL) {
+//        DispatchQueue.global().async { [weak self] in
+//            if let data = try? Data(contentsOf: url) {
+//                DispatchQueue.main.async {
+//                    if let image = UIImage(data: data) {
+//                        self?.image = image
+//                    } else {
+//                        self?.image = UIImage(named: "image_unavailable")
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
+extension firstViewController {
+    func loadImage(url: URL) -> UIImage {
+        if let data = try? Data(contentsOf: url) {
+            if let image = UIImage(data: data) {
+                return image
             }
         }
+        return UIImage(named: "image_unavailable")!
     }
 }

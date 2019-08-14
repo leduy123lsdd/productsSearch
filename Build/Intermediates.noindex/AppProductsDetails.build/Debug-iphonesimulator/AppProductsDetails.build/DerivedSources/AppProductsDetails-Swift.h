@@ -216,8 +216,6 @@ SWIFT_CLASS("_TtC18AppProductsDetails13TableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-
 @class UISearchBar;
 @class UITableView;
 @class UIStoryboardSegue;
@@ -239,6 +237,8 @@ SWIFT_CLASS("_TtC18AppProductsDetails19firstViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 @interface firstViewController (SWIFT_EXTENSION(AppProductsDetails)) <UISearchBarDelegate>
