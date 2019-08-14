@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "7c4a16c5b3ca8bc4a0baa76a032e4df4"
+build_time: [1565750951, 218391000]
+inputs:
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/firstViewController.swift": [1565750951, 128868706]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/productRequest.swift": [1565747287, 104864521]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/table view cell/TableViewCell.swift": [1565603087, 986678156]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/secondViewController.swift": [1565602839, 928644101]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/AppDelegate.swift": [1565600319, 78876776]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/model/products.swift": [1565746153, 38110687]
