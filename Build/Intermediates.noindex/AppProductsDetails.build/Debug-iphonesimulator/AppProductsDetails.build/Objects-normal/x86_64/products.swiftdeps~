@@ -1,19 +1,28 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "priceInfo"
+- "seoInfo"
 - "imageDetail"
+- "brandInfo"
+- "productTypeInfo"
 - "productDetail"
 - "products"
 - "productResult"
 provides-nominal:
 - "18AppProductsDetails9priceInfoV"
+- "18AppProductsDetails7seoInfoV"
 - "18AppProductsDetails11imageDetailV"
+- "18AppProductsDetails9brandInfoV"
+- "18AppProductsDetails15productTypeInfoV"
 - "18AppProductsDetails13productDetailV"
 - "18AppProductsDetails8productsV"
 - "18AppProductsDetails13productResultV"
 provides-member:
 - ["18AppProductsDetails9priceInfoV", ""]
+- ["18AppProductsDetails7seoInfoV", ""]
 - ["18AppProductsDetails11imageDetailV", ""]
+- ["18AppProductsDetails9brandInfoV", ""]
+- ["18AppProductsDetails15productTypeInfoV", ""]
 - ["18AppProductsDetails13productDetailV", ""]
 - ["18AppProductsDetails8productsV", ""]
 - ["18AppProductsDetails13productResultV", ""]
@@ -21,14 +30,19 @@ provides-dynamic-lookup:
 depends-top-level:
 - "=="
 - "Decodable"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "String"
 - !private "StringLiteralType"
+- "brandInfo"
 - "imageDetail"
 - "priceInfo"
 - "productDetail"
 - "productResult"
+- "productTypeInfo"
 - "products"
+- "seoInfo"
 - !private "~="
 depends-member:
 - ["s9CodingKeyP", "=="]
@@ -62,13 +76,17 @@ depends-member:
 - ["s23CustomStringConvertibleP", "intValue"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - ["Se", ""]
+- !private ["Se", "brand"]
+- !private ["Se", "description"]
 - !private ["Se", "images"]
 - ["Se", "init"]
 - !private ["Se", "name"]
 - !private ["Se", "price"]
+- !private ["Se", "productType"]
 - !private ["Se", "products"]
 - !private ["Se", "result"]
 - !private ["Se", "sellPrice"]
+- !private ["Se", "seoInfo"]
 - !private ["Se", "url"]
 - !private ["s7DecoderP", "container"]
 - ["SQ", "=="]
@@ -96,6 +114,10 @@ depends-member:
 - !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- ["18AppProductsDetails9brandInfoV", "String"]
+- ["18AppProductsDetails9brandInfoV", "deinit"]
+- ["18AppProductsDetails9brandInfoV", "init"]
+- ["18AppProductsDetails9brandInfoV", "name"]
 - ["18AppProductsDetails11imageDetailV", "String"]
 - ["18AppProductsDetails11imageDetailV", "deinit"]
 - ["18AppProductsDetails11imageDetailV", "init"]
@@ -105,6 +127,8 @@ depends-member:
 - ["18AppProductsDetails9priceInfoV", "init"]
 - ["18AppProductsDetails9priceInfoV", "sellPrice"]
 - ["18AppProductsDetails13productDetailV", "String"]
+- ["18AppProductsDetails13productDetailV", "brand"]
+- ["18AppProductsDetails13productDetailV", "brandInfo"]
 - ["18AppProductsDetails13productDetailV", "deinit"]
 - ["18AppProductsDetails13productDetailV", "imageDetail"]
 - ["18AppProductsDetails13productDetailV", "images"]
@@ -112,14 +136,25 @@ depends-member:
 - ["18AppProductsDetails13productDetailV", "name"]
 - ["18AppProductsDetails13productDetailV", "price"]
 - ["18AppProductsDetails13productDetailV", "priceInfo"]
+- ["18AppProductsDetails13productDetailV", "productType"]
+- ["18AppProductsDetails13productDetailV", "productTypeInfo"]
+- ["18AppProductsDetails13productDetailV", "seoInfo"]
 - ["18AppProductsDetails13productResultV", "deinit"]
 - ["18AppProductsDetails13productResultV", "init"]
 - ["18AppProductsDetails13productResultV", "products"]
 - ["18AppProductsDetails13productResultV", "result"]
+- ["18AppProductsDetails15productTypeInfoV", "String"]
+- ["18AppProductsDetails15productTypeInfoV", "deinit"]
+- ["18AppProductsDetails15productTypeInfoV", "init"]
+- ["18AppProductsDetails15productTypeInfoV", "name"]
 - ["18AppProductsDetails8productsV", "deinit"]
 - ["18AppProductsDetails8productsV", "init"]
 - ["18AppProductsDetails8productsV", "productDetail"]
 - ["18AppProductsDetails8productsV", "products"]
+- ["18AppProductsDetails7seoInfoV", "String"]
+- ["18AppProductsDetails7seoInfoV", "deinit"]
+- ["18AppProductsDetails7seoInfoV", "description"]
+- ["18AppProductsDetails7seoInfoV", "init"]
 depends-nominal:
 - "s9CodingKeyP"
 - "s28CustomDebugStringConvertibleP"
@@ -131,11 +166,14 @@ depends-nominal:
 - !private "s6HasherV"
 - !private "s22KeyedDecodingContainerV"
 - !private "s30KeyedDecodingContainerProtocolP"
+- "18AppProductsDetails9brandInfoV"
 - "18AppProductsDetails11imageDetailV"
 - "18AppProductsDetails9priceInfoV"
 - "18AppProductsDetails13productDetailV"
 - "18AppProductsDetails13productResultV"
+- "18AppProductsDetails15productTypeInfoV"
 - "18AppProductsDetails8productsV"
+- "18AppProductsDetails7seoInfoV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -213,4 +251,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5cbfa6be2f9e8d337aa8bf034889a94d"
+interface-hash: "9960d0dbc81069b52004bdefc96999f7"

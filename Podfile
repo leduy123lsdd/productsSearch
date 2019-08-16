@@ -8,5 +8,6 @@ target 'AppProductsDetails' do
   # Pods for AppProductsDetails
 
 pod 'SDWebImage'
+pod 'SVProgressHUD'
 
 end

@@ -12,8 +12,6 @@ provides-dynamic-lookup:
 - "price"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
 - "UICollectionViewCell"
 - "UIImageView"
 - "UILabel"

@@ -56,6 +56,10 @@ class thirdTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
         return suggestList.count
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "suggestCell", for: indexPath) as! suggestCollectionViewCell
 //        cell.price.text = String(products[indexPath.row].price.sellPrice ?? 0)
@@ -80,21 +84,6 @@ class thirdTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
             
             
         }
-        
-//        DispatchQueue.main.async {
-//            if let imageArray = product.images {
-//                if imageArray.count > 0 {
-//                    if let url = URL(string: imageArray[0].url!) {
-//                        cell.imageProduct.sd_setImage(with: url)
-//                    } else {
-//                        cell.imageProduct.image = imageRs
-//                    }
-//                } else {
-//                    cell.imageProduct.image = imageRs
-//                }
-//
-//            }
-//        }
         
         return cell
     }

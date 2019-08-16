@@ -19,7 +19,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" translucent="NO" id="e7n-rt-R1T">
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Searching.." translucent="NO" id="e7n-rt-R1T">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="Le2-j4-0vm" id="0pq-L9-GXa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vS0-f1-lWb">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="vS0-f1-lWb">
                         <barButtonItem key="backBarButtonItem" title="Back" id="W7n-jE-lGL"/>
                     </navigationItem>
                     <connections>
@@ -81,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZ2-45-zSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="167"/>
+            <point key="canvasLocation" x="1755" y="-646"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AUX-2Z-mq4">

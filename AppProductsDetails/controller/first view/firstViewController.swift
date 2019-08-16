@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import SVProgressHUD
 
 class firstViewController: UITableViewController {
     
@@ -131,6 +132,8 @@ class firstViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150.0
     }
+    
+    
 }
 
 //MARK: - Search bar
@@ -164,6 +167,7 @@ extension firstViewController: UISearchBarDelegate {
     
     //MARK: - Load data from api
     func loadData(page: Int, limit: Int, query: String) {
+        
         let productsRequest = productRequest(page: page,limit: limit, query: query)
         productsRequest.getProduct { [weak self] rs in
             switch rs {

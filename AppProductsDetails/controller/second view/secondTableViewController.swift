@@ -19,6 +19,7 @@ class secondTableViewController: UITableViewController {
         tableView.register(UINib(nibName: "segmentTableViewCell", bundle: nil), forCellReuseIdentifier: "secondCell")
         tableView.register(UINib(nibName: "thirdTableViewCell", bundle: nil), forCellReuseIdentifier: "thirdCell")
         navigationItem.title = querryString!
+        tableView.endEditing(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,6 +32,7 @@ class secondTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         var cell_1 : pageTableViewCell
         var cell_2 : segmentTableViewCell
         var cell_3 : thirdTableViewCell
@@ -55,6 +57,10 @@ class secondTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
             return 300
@@ -63,7 +69,7 @@ class secondTableViewController: UITableViewController {
             return 150.0
         }
         if indexPath.row == 2 {
-            return 120.0
+            return 200.0
         }
         return 0.0
     }

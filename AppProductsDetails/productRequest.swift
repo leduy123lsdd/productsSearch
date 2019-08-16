@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SVProgressHUD
 
 enum getProductError: Error {
     case NoDataAvailable
@@ -31,6 +32,7 @@ class productRequest {
     }
     
     func getProduct(completion: @escaping(Result<[productDetail], getProductError>) -> Void) {
+        SVProgressHUD.show()
         let dataTark = URLSession.shared.dataTask(with: resourceURL) { data, _, _ in
             
             guard let jsonData = data else {
@@ -50,5 +52,6 @@ class productRequest {
         }
         
         dataTark.resume()
+        SVProgressHUD.dismiss()
     }
 }
