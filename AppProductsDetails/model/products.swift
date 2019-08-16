@@ -13,16 +13,30 @@ struct priceInfo: Decodable {
     var sellPrice: Int?
 }
 
+struct seoInfo: Decodable {
+    var description: String?
+}
+
 struct imageDetail: Decodable {
     var url: String?
 }
 
+struct brandInfo: Decodable {
+    var name: String?
+}
+
+struct productTypeInfo: Decodable {
+    var name: String?
+}
 
 ///////////////////////////
 struct productDetail: Decodable {
     var name: String?
     var price: priceInfo
     var images: [imageDetail]?
+    var seoInfo: seoInfo
+    var brand: brandInfo
+    var productType: productTypeInfo
 }
 
 ///////////////////////////

@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		uYsJpGGcFYXLggd0S4h8p5eNXms=
+		bv/T0qBjSYseMMBCRWhryTkVF5U=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		schDEk/cA7rhpPY4v2zKSNvyzUQ=
+		dy/WTZEXQrP8lYDLrZxIPYiwTn0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,27 +18,43 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		vki3ZSL//TqvZ/yGbVwWq0xTa2c=
+		OLLvzR/tlNNlPnfSNs2eriAwfhU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		gMKKMuiAMFpURAtnpzqM3lmZaDE=
+		ePntdKxj6cGdUc3oLjLWVLUSirY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Le2-j4-0vm-view-NDM-lJ-qAv.nib</key>
 		<data>
-		E9NcsQXT6s2V+vLnSwKfjAnrIyo=
+		bIh1ZkopkWBGPsev/S846QEGm2E=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-nf7-w0-479.nib</key>
 		<data>
-		EjxQc+9lEb6JKiniOTkx8AHluzs=
+		pyCj7mAliCX6g83uXjwjkVUPmM4=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-hqf-jB-heR.nib</key>
+		<key>Base.lproj/Main.storyboardc/UITableViewController-x7o-gH-A7v.nib</key>
 		<data>
-		uZOIt4d+dnfGJPkHm9Tx5WpnsQU=
+		gvu5gbciu9So5LZaClokvMTIUUo=
 		</data>
-		<key>Base.lproj/Main.storyboardc/hqf-jB-heR-view-L6P-cL-YTt.nib</key>
+		<key>Base.lproj/Main.storyboardc/x7o-gH-A7v-view-OX7-jV-maT.nib</key>
 		<data>
-		ocM6awF2NmwLCoPO94l8TZWOue8=
+		1Ly1t1kTJxpLxOEq8GqvLlWfVL8=
+		</data>
+		<key>CollectionViewCell.nib</key>
+		<data>
+		dbRSfG31vK+/PE+zM1e4wTQYhUs=
+		</data>
+		<key>Frameworks/SDWebImage.framework/Info.plist</key>
+		<data>
+		M6EUTkO9WuyT4QrlWKA4s6V2ZSw=
+		</data>
+		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
+		<data>
+		ArN81UFxfqrXlsgLlnHM8BVFNZY=
+		</data>
+		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<data>
+		gGikyAXQLJJb+VFdXp0dFVfk7z8=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -50,11 +66,27 @@
 		</data>
 		<key>TableViewCell.nib</key>
 		<data>
-		EadEOMEi/dz+/y79U7l934Pwkwg=
+		Q1j5vFmEmwxpcpnCgxICksJFqec=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
 		q9bYp2Hq3VAApWCW4DIcp8hu09M=
+		</data>
+		<key>pageTableViewCell.nib</key>
+		<data>
+		2ukwRUJsiRZHiD/ncc5Xxm/bR/U=
+		</data>
+		<key>segmentTableViewCell.nib</key>
+		<data>
+		HDMT8ahV4vfCM52AcObI8Io2k/8=
+		</data>
+		<key>suggestCollectionViewCell.nib</key>
+		<data>
+		v+TBvnXc0JIVS5U5SY/9hC16UjU=
+		</data>
+		<key>thirdTableViewCell.nib</key>
+		<data>
+		ada1HE9vHTUfb5BC9AkHStDyewc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hRS8R+9/5urF7KvZJ1up/LPhkdV/G86DGOAeKFva8Oc=
+			ZBf9OLgLJUyec+yuD0QqgV3FvLgq7BgXvO6nmt4UnXE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DblvaLXUK2nfXV9GDuSlDOkXiuB0eyzKrUAlP3TWxWM=
+			/2+ltnJsPHqzVZPv7fMC+AJ/sghnrVb3sSMDU9jKKSA=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -84,49 +116,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9z41xtEj3pfWEJ+uwB/86qDAzzRFOXPdWnxyuCUJ/bI=
+			LUABYTIS5I7jn+DYMePXCxrYUX9EgivmzI0kHHOP014=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			86O97eQpR+hR7v1dS7HpWYP3wK2FbaNGcSq9lv1jIXY=
+			7eKXOlLA1oLephw0irTAqBkW+caZy12s7+pNlTW5yDw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Le2-j4-0vm-view-NDM-lJ-qAv.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QWlm40Q8iLSkx9oEcmZCMdaNlAtOXIEZj3pG3Zskvz4=
+			iBBUSkrkktOKUn9yEEV8ygbOPefqIBlQ7ziE0DicouQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-nf7-w0-479.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gXAfWX0dbf67XTiBQQCGgktqz/GiKtz3xDRdRsElWzA=
+			mLvNHDnnmMcmaxK92veNmI1vxgAlfWM0kKBMC7Nogrw=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-hqf-jB-heR.nib</key>
+		<key>Base.lproj/Main.storyboardc/UITableViewController-x7o-gH-A7v.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y/JkWIZSL8ourV5PkutLw9o7eCLYDeCq3IRF9SRVGlk=
+			aRbtQHxUHzBNDlwtr7uMTg/vSGcoAITYeJ47YxdV8cM=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/hqf-jB-heR-view-L6P-cL-YTt.nib</key>
+		<key>Base.lproj/Main.storyboardc/x7o-gH-A7v-view-OX7-jV-maT.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rxYOFICBp1DptUTFcW4x38SkJYu+ShW2NsVIUZ5S2CI=
+			iBMUN7zMiAV1gF2inl+sauqNaH5oi5Z0PczgVY+PhU0=
+			</data>
+		</dict>
+		<key>CollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Br74Bp7a3v8lQNpEnhM+pu803j7brpot43Zqv06jdA8=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uQrKg+xF0f5kd4dEpGU61EM+oq1yDBa1NknWOgpOFRs=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			85l/glAxpW0fnef732DQdGcDtuQWj7YIVnwehZo7jEE=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YPpkgW6+smNVwL33E0QpSVNy4pfp1nxwaXRsKzR+AYU=
 			</data>
 		</dict>
 		<key>TableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXXTArp5d1BFilNgCWuU66Uqzb4rklqb0mXq3uOlFXU=
+			WaMw3nzIL3lmeJMdHmjouhOUnBrpuRi1eObgwUkuz/4=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
@@ -134,6 +194,34 @@
 			<key>hash2</key>
 			<data>
 			e0a+/f2FJbrH7memHu1eCpwtlpkd1uvrw7pC3H5Ks6c=
+			</data>
+		</dict>
+		<key>pageTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QtBK7COJsuD0iAFGJjBKLJz0rCltJ/SxR1qNOpGZ0OI=
+			</data>
+		</dict>
+		<key>segmentTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PWa09wshsnURd64XsQ/AKJo3FVUshglsRmnbjdFxeus=
+			</data>
+		</dict>
+		<key>suggestCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IzdEONWazWsQGTvy+ITw52ddiEew1bqtCZg3bv9ZBuE=
+			</data>
+		</dict>
+		<key>thirdTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qdOB6OuyC2jtoTVGdvHS5sHOj5sAYCfqhSdrcFhHVMA=
 			</data>
 		</dict>
 	</dict>
