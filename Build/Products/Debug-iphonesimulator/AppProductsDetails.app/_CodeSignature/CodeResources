@@ -22,31 +22,23 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		iVjrv0Yhb+OO2mWHTKY/B7OUdRE=
+		6JdE/OTATbgY4Pllm5S7M/wfswQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Le2-j4-0vm-view-NDM-lJ-qAv.nib</key>
 		<data>
-		ZVGEGwa/Gb8Qk9VN3vUqkw9tF7U=
+		Ug5AJQpuonRRbVOJVLvDLmt0Bd0=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UINavigationController-kEm-ZP-3ql.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-4fW-6Q-9yw.nib</key>
 		<data>
-		0ZZ8QtpaMkw+a9NepPHktiQHp3E=
-		</data>
-		<key>Base.lproj/Main.storyboardc/UITableViewController-Le2-j4-0vm.nib</key>
-		<data>
-		bKO++rpMwr8kTIF6Y5D44r0mEaA=
+		IzWxwUDN+YWWFkLCDDq1aKlgQ4w=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-x7o-gH-A7v.nib</key>
 		<data>
-		mJNPTysQxGGcmzBBhcKCIHaw3Ns=
-		</data>
-		<key>Base.lproj/Main.storyboardc/qq7-W0-hxo-view-Thg-Y1-bvC.nib</key>
-		<data>
-		24VjDddWcStiWsYymP5aoLppw5U=
+		49VRAb5gLQRuN5Wnr9A0aZiJCjI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/x7o-gH-A7v-view-OX7-jV-maT.nib</key>
 		<data>
-		2F/lFmEAYdaIp8TXK+vOHPBww6U=
+		qj/GoY24d/3aG5nk/B0ZDqUKTY4=
 		</data>
 		<key>CollectionViewCell.nib</key>
 		<data>
@@ -134,7 +126,7 @@
 		</data>
 		<key>TableViewCell.nib</key>
 		<data>
-		z3iZZKIoQ5zVjlQW+wmB7+RWiXw=
+		nuFJ/IDE0Q8bu+Hu3i8SaQVPJEk=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -191,49 +183,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WvI4DPR7jKkWnXWRFkxa7Tuw7r2XjWOXr6ZXi7kTHEw=
+			EVHTXuDvrRY9KohK7NJIN0bURJKv4atnoMWykA2MAYI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Le2-j4-0vm-view-NDM-lJ-qAv.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hOZXkF57YU/AkCZV3K1fuaLc/Yx3vR7wrZ5Bt6gFep4=
+			2hYkAWp9PjrR2ttojTnQbVzYX8GZrHQ0ewxCUM0J+aQ=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UINavigationController-kEm-ZP-3ql.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-4fW-6Q-9yw.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SPPKFrwIKNUULkrpnREWD+UqrpEZ1UrFAA8/tICdWOg=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UITableViewController-Le2-j4-0vm.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EGxa2fT/6xwIFUggx+WDlO0MZwTvS87IOgb0jNaEgy4=
+			mC8xGPNvbZfV3d2NYnpyUdg2kNO8bJuaotCaT7r6qlc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-x7o-gH-A7v.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iwhR8/HfM6xonq8S4ebaUtiRRhUopARE4bOs9Eh8r2M=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/qq7-W0-hxo-view-Thg-Y1-bvC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KdYzUjufdaI+LvO/EGotS1SnHuVuPfE7M9IoAGKMzIs=
+			ZNEnKgtHZszh9daSnpeJIv9cSczxz5GN84av4ST1jBA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/x7o-gH-A7v-view-OX7-jV-maT.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Osm3jGVwMXfNcQdzebVOyKEmXFa1EtFYE6dClKZ6RaA=
+			EZil9zSL3l0KYkx67aUft+92eG7UM71jrIu6w1fw6Cg=
 			</data>
 		</dict>
 		<key>CollectionViewCell.nib</key>
@@ -373,7 +351,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1on0aDdKVu7EsCuMogBFNU1UXCav5ttoftcmTmC7qQs=
+			J1FZC2kHiu9ndeRJEP/0wa7HpaOELQ1VAFbINGnOA9g=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

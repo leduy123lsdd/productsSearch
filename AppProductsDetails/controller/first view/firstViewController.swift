@@ -15,7 +15,6 @@ class firstViewController: UITableViewController {
     //MARK: - query data
     var searchItem: String?
     var pageItem: Int = 1
-    
     var listOfProducts = [productDetail](){
         didSet {
             DispatchQueue.main.async {
@@ -23,13 +22,8 @@ class firstViewController: UITableViewController {
             }
         }
     }
-    
     var images = [UIImage]()
     var url = [String]()
-    
-    //image index for cells
-//    var currentProduct = 0
-//    var numberOfProducts = 0
     
     func distributeImage() {
         // take first url
@@ -54,15 +48,19 @@ class firstViewController: UITableViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         tableView.keyboardDismissMode = .onDrag
-//        tableView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         searchBar.frame.size.height = 60
+        loadData(page: 1, limit: 5, query: "sony")
     }
     
     //MARK: - Table view datasource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         let data = listOfProducts[indexPath.row]
         
@@ -133,6 +131,9 @@ class firstViewController: UITableViewController {
         return 150.0
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Hiển thị các sản phẩm"
+    }
     
 }
 
@@ -163,11 +164,12 @@ extension firstViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.endEditing(true)
         searchBar.setShowsCancelButton(false, animated: true)
+        
     }
     
     //MARK: - Load data from api
     func loadData(page: Int, limit: Int, query: String) {
-        
+        searchItem = query
         let productsRequest = productRequest(page: page,limit: limit, query: query)
         productsRequest.getProduct { [weak self] rs in
             switch rs {

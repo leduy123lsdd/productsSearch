@@ -24,6 +24,7 @@ class segmentTableViewCell: UITableViewCell {
             if let price = productDetail?.price.sellPrice {
                 self.price = price
             }
+            
             if let descrip = productDetail?.seoInfo.description {
                 self.descriptionProduct = descrip
             }
@@ -33,6 +34,10 @@ class segmentTableViewCell: UITableViewCell {
             if let type = productDetail?.productType.name {
                 self.productType = type
             }
+            
+            segmentControl.selectedSegmentIndex = 0
+            segmentAction(segmentControl)
+            segmentControl.reloadInputViews()
         }
     }
 
@@ -42,8 +47,8 @@ class segmentTableViewCell: UITableViewCell {
     @IBAction func segmentAction(_ sender: UISegmentedControl) {
         switch segmentControl.selectedSegmentIndex {
         case 0:
-            let priceString = price == 0 ? "No information" : String(price)
-            textfieldControl.text = "Price: \(priceString) \nBrand: \(brand)"
+            let priceString = price == 0 ? "No information" : String(price/1000) + ".000"
+            textfieldControl.text = "Price: \(priceString) VNĐ \nBrand: \(brand)"
         case 1:
             textfieldControl.text = "Description: \(descriptionProduct) \nName: \(name)"
         case 2:
@@ -58,8 +63,11 @@ class segmentTableViewCell: UITableViewCell {
         // Initialization code
         segmentControl.selectedSegmentIndex = 0
         segmentAction(segmentControl)
+        segmentControl.reloadInputViews()
     }
 
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

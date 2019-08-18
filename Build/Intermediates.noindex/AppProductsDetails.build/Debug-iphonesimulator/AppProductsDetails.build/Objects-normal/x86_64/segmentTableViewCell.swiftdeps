@@ -12,6 +12,8 @@ provides-dynamic-lookup:
 - "setSelected"
 - "textfieldControl"
 depends-top-level:
+- !private "+"
+- !private "/"
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
@@ -38,6 +40,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "price"]
 - !private ["So15CALayerDelegateP", "productDetail"]
 - !private ["So15CALayerDelegateP", "productType"]
+- !private ["So15CALayerDelegateP", "reloadInputViews"]
 - !private ["So15CALayerDelegateP", "segmentAction"]
 - !private ["So15CALayerDelegateP", "segmentControl"]
 - !private ["So15CALayerDelegateP", "selectedSegmentIndex"]
@@ -54,6 +57,7 @@ depends-member:
 - !private ["s7CVarArgP", "price"]
 - !private ["s7CVarArgP", "productDetail"]
 - !private ["s7CVarArgP", "productType"]
+- !private ["s7CVarArgP", "reloadInputViews"]
 - !private ["s7CVarArgP", "segmentAction"]
 - !private ["s7CVarArgP", "segmentControl"]
 - !private ["s7CVarArgP", "selectedSegmentIndex"]
@@ -72,6 +76,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "price"]
 - !private ["s28CustomDebugStringConvertibleP", "productDetail"]
 - !private ["s28CustomDebugStringConvertibleP", "productType"]
+- !private ["s28CustomDebugStringConvertibleP", "reloadInputViews"]
 - !private ["s28CustomDebugStringConvertibleP", "segmentAction"]
 - !private ["s28CustomDebugStringConvertibleP", "segmentControl"]
 - !private ["s28CustomDebugStringConvertibleP", "selectedSegmentIndex"]
@@ -79,6 +84,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "textfieldControl"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "reloadInputViews"]
 - !private ["s17CustomReflectableP", "selectedSegmentIndex"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "String"]
@@ -93,6 +99,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "price"]
 - !private ["s23CustomStringConvertibleP", "productDetail"]
 - !private ["s23CustomStringConvertibleP", "productType"]
+- !private ["s23CustomStringConvertibleP", "reloadInputViews"]
 - !private ["s23CustomStringConvertibleP", "segmentAction"]
 - !private ["s23CustomStringConvertibleP", "segmentControl"]
 - !private ["s23CustomStringConvertibleP", "selectedSegmentIndex"]
@@ -105,6 +112,7 @@ depends-member:
 - !private ["Se", "name"]
 - !private ["Se", "price"]
 - !private ["Se", "productType"]
+- !private ["Se", "reloadInputViews"]
 - !private ["Se", "selectedSegmentIndex"]
 - !private ["Se", "sellPrice"]
 - !private ["Se", "seoInfo"]
@@ -112,6 +120,7 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "init"]
+- !private ["SE", "reloadInputViews"]
 - !private ["SE", "selectedSegmentIndex"]
 - !private ["SE", "text"]
 - !private ["SQ", "String"]
@@ -124,6 +133,7 @@ depends-member:
 - !private ["SQ", "price"]
 - !private ["SQ", "productDetail"]
 - !private ["SQ", "productType"]
+- !private ["SQ", "reloadInputViews"]
 - !private ["SQ", "segmentAction"]
 - !private ["SQ", "segmentControl"]
 - !private ["SQ", "selectedSegmentIndex"]
@@ -131,6 +141,7 @@ depends-member:
 - !private ["SQ", "text"]
 - !private ["SQ", "textfieldControl"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "reloadInputViews"]
 - !private ["s23ExpressibleByNilLiteralP", "selectedSegmentIndex"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
@@ -146,6 +157,7 @@ depends-member:
 - !private ["SH", "price"]
 - !private ["SH", "productDetail"]
 - !private ["SH", "productType"]
+- !private ["SH", "reloadInputViews"]
 - !private ["SH", "segmentAction"]
 - !private ["SH", "segmentControl"]
 - !private ["SH", "selectedSegmentIndex"]
@@ -164,6 +176,7 @@ depends-member:
 - !private ["So8NSCodingP", "price"]
 - !private ["So8NSCodingP", "productDetail"]
 - !private ["So8NSCodingP", "productType"]
+- !private ["So8NSCodingP", "reloadInputViews"]
 - !private ["So8NSCodingP", "segmentAction"]
 - !private ["So8NSCodingP", "segmentControl"]
 - !private ["So8NSCodingP", "selectedSegmentIndex"]
@@ -182,6 +195,7 @@ depends-member:
 - ["So8NSObjectC", "price"]
 - ["So8NSObjectC", "productDetail"]
 - ["So8NSObjectC", "productType"]
+- !private ["So8NSObjectC", "reloadInputViews"]
 - ["So8NSObjectC", "segmentAction"]
 - ["So8NSObjectC", "segmentControl"]
 - !private ["So8NSObjectC", "selectedSegmentIndex"]
@@ -198,12 +212,14 @@ depends-member:
 - !private ["So8NSObjectP", "price"]
 - !private ["So8NSObjectP", "productDetail"]
 - !private ["So8NSObjectP", "productType"]
+- !private ["So8NSObjectP", "reloadInputViews"]
 - !private ["So8NSObjectP", "segmentAction"]
 - !private ["So8NSObjectP", "segmentControl"]
 - !private ["So8NSObjectP", "selectedSegmentIndex"]
 - !private ["So8NSObjectP", "setSelected"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "textfieldControl"]
+- !private ["Sq", "reloadInputViews"]
 - !private ["Sq", "selectedSegmentIndex"]
 - !private ["Sq", "text"]
 - !private ["Sm", "init"]
@@ -226,6 +242,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "price"]
 - !private ["So29UIAccessibilityIdentificationP", "productDetail"]
 - !private ["So29UIAccessibilityIdentificationP", "productType"]
+- !private ["So29UIAccessibilityIdentificationP", "reloadInputViews"]
 - !private ["So29UIAccessibilityIdentificationP", "segmentAction"]
 - !private ["So29UIAccessibilityIdentificationP", "segmentControl"]
 - !private ["So29UIAccessibilityIdentificationP", "selectedSegmentIndex"]
@@ -242,6 +259,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "price"]
 - !private ["So12UIAppearanceP", "productDetail"]
 - !private ["So12UIAppearanceP", "productType"]
+- !private ["So12UIAppearanceP", "reloadInputViews"]
 - !private ["So12UIAppearanceP", "segmentAction"]
 - !private ["So12UIAppearanceP", "segmentControl"]
 - !private ["So12UIAppearanceP", "selectedSegmentIndex"]
@@ -258,6 +276,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "price"]
 - !private ["So21UIAppearanceContainerP", "productDetail"]
 - !private ["So21UIAppearanceContainerP", "productType"]
+- !private ["So21UIAppearanceContainerP", "reloadInputViews"]
 - !private ["So21UIAppearanceContainerP", "segmentAction"]
 - !private ["So21UIAppearanceContainerP", "segmentControl"]
 - !private ["So21UIAppearanceContainerP", "selectedSegmentIndex"]
@@ -265,6 +284,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "textfieldControl"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "reloadInputViews"]
 - !private ["So9UIControlC", "selectedSegmentIndex"]
 - !private ["So17UICoordinateSpaceP", "String"]
 - ["So17UICoordinateSpaceP", ""]
@@ -276,6 +296,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "price"]
 - !private ["So17UICoordinateSpaceP", "productDetail"]
 - !private ["So17UICoordinateSpaceP", "productType"]
+- !private ["So17UICoordinateSpaceP", "reloadInputViews"]
 - !private ["So17UICoordinateSpaceP", "segmentAction"]
 - !private ["So17UICoordinateSpaceP", "segmentControl"]
 - !private ["So17UICoordinateSpaceP", "selectedSegmentIndex"]
@@ -292,6 +313,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "price"]
 - !private ["So13UIDynamicItemP", "productDetail"]
 - !private ["So13UIDynamicItemP", "productType"]
+- !private ["So13UIDynamicItemP", "reloadInputViews"]
 - !private ["So13UIDynamicItemP", "segmentAction"]
 - !private ["So13UIDynamicItemP", "segmentControl"]
 - !private ["So13UIDynamicItemP", "selectedSegmentIndex"]
@@ -308,6 +330,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "price"]
 - !private ["So18UIFocusEnvironmentP", "productDetail"]
 - !private ["So18UIFocusEnvironmentP", "productType"]
+- !private ["So18UIFocusEnvironmentP", "reloadInputViews"]
 - !private ["So18UIFocusEnvironmentP", "segmentAction"]
 - !private ["So18UIFocusEnvironmentP", "segmentControl"]
 - !private ["So18UIFocusEnvironmentP", "selectedSegmentIndex"]
@@ -324,6 +347,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "price"]
 - !private ["So11UIFocusItemP", "productDetail"]
 - !private ["So11UIFocusItemP", "productType"]
+- !private ["So11UIFocusItemP", "reloadInputViews"]
 - !private ["So11UIFocusItemP", "segmentAction"]
 - !private ["So11UIFocusItemP", "segmentControl"]
 - !private ["So11UIFocusItemP", "selectedSegmentIndex"]
@@ -340,6 +364,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "price"]
 - !private ["So20UIFocusItemContainerP", "productDetail"]
 - !private ["So20UIFocusItemContainerP", "productType"]
+- !private ["So20UIFocusItemContainerP", "reloadInputViews"]
 - !private ["So20UIFocusItemContainerP", "segmentAction"]
 - !private ["So20UIFocusItemContainerP", "segmentControl"]
 - !private ["So20UIFocusItemContainerP", "selectedSegmentIndex"]
@@ -372,6 +397,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "price"]
 - !private ["So30UIPasteConfigurationSupportingP", "productDetail"]
 - !private ["So30UIPasteConfigurationSupportingP", "productType"]
+- !private ["So30UIPasteConfigurationSupportingP", "reloadInputViews"]
 - !private ["So30UIPasteConfigurationSupportingP", "segmentAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "segmentControl"]
 - !private ["So30UIPasteConfigurationSupportingP", "selectedSegmentIndex"]
@@ -390,6 +416,7 @@ depends-member:
 - ["So11UIResponderC", "price"]
 - ["So11UIResponderC", "productDetail"]
 - ["So11UIResponderC", "productType"]
+- !private ["So11UIResponderC", "reloadInputViews"]
 - ["So11UIResponderC", "segmentAction"]
 - ["So11UIResponderC", "segmentControl"]
 - !private ["So11UIResponderC", "selectedSegmentIndex"]
@@ -406,6 +433,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "price"]
 - !private ["So30UIResponderStandardEditActionsP", "productDetail"]
 - !private ["So30UIResponderStandardEditActionsP", "productType"]
+- !private ["So30UIResponderStandardEditActionsP", "reloadInputViews"]
 - !private ["So30UIResponderStandardEditActionsP", "segmentAction"]
 - !private ["So30UIResponderStandardEditActionsP", "segmentControl"]
 - !private ["So30UIResponderStandardEditActionsP", "selectedSegmentIndex"]
@@ -413,7 +441,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "textfieldControl"]
 - !private ["So12UIScrollViewC", "text"]
+- !private ["So18UISegmentedControlC", "reloadInputViews"]
 - !private ["So18UISegmentedControlC", "selectedSegmentIndex"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "reloadInputViews"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "selectedSegmentIndex"]
 - ["So15UITableViewCellC", "Bool"]
 - !private ["So15UITableViewCellC", "String"]
@@ -448,6 +478,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "price"]
 - !private ["So18UITraitEnvironmentP", "productDetail"]
 - !private ["So18UITraitEnvironmentP", "productType"]
+- !private ["So18UITraitEnvironmentP", "reloadInputViews"]
 - !private ["So18UITraitEnvironmentP", "segmentAction"]
 - !private ["So18UITraitEnvironmentP", "segmentControl"]
 - !private ["So18UITraitEnvironmentP", "selectedSegmentIndex"]
@@ -464,6 +495,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "price"]
 - !private ["So23UIUserActivityRestoringP", "productDetail"]
 - !private ["So23UIUserActivityRestoringP", "productType"]
+- !private ["So23UIUserActivityRestoringP", "reloadInputViews"]
 - !private ["So23UIUserActivityRestoringP", "segmentAction"]
 - !private ["So23UIUserActivityRestoringP", "segmentControl"]
 - !private ["So23UIUserActivityRestoringP", "selectedSegmentIndex"]
@@ -482,6 +514,7 @@ depends-member:
 - ["So6UIViewC", "price"]
 - ["So6UIViewC", "productDetail"]
 - ["So6UIViewC", "productType"]
+- !private ["So6UIViewC", "reloadInputViews"]
 - ["So6UIViewC", "segmentAction"]
 - ["So6UIViewC", "segmentControl"]
 - !private ["So6UIViewC", "selectedSegmentIndex"]
@@ -503,6 +536,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "price"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "productDetail"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "productType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadInputViews"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "segmentAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "segmentControl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedSegmentIndex"]
@@ -510,6 +544,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textfieldControl"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "reloadInputViews"]
 - !private ["s21_ObjectiveCBridgeableP", "selectedSegmentIndex"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "String"]
@@ -522,6 +557,7 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "price"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "productDetail"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "productType"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reloadInputViews"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "segmentAction"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "segmentControl"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "selectedSegmentIndex"]
@@ -643,7 +679,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
@@ -684,6 +722,7 @@ depends-external:
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
@@ -691,8 +730,11 @@ depends-external:
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 - "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
