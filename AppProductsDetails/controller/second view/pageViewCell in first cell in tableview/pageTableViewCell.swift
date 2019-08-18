@@ -10,9 +10,11 @@ import UIKit
 import SDWebImage
 
 class pageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+    // get data
+    var urlString = [imageDetail]()
     
     let width = UIScreen.main.bounds.width
-    var urlString = [imageDetail]()
+    
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -25,6 +27,8 @@ class pageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionCell")
         pageControl.hidesForSinglePage = true
         pageControl.endEditing(true)
+        
+        
         
     }
 
