@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cz0-bT-23g">
-                        <rect key="frame" x="6" y="50" width="313" height="241.5"/>
+                        <rect key="frame" x="10" y="24" width="305" height="267.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lfm-mj-FCb">
                             <size key="itemSize" width="50" height="50"/>
@@ -30,23 +30,23 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-X5-Egy">
-                        <rect key="frame" x="5" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="10" y="2" width="305" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="Pzz-mt-TTS"/>
+                            <constraint firstAttribute="height" constant="20" id="Pzz-mt-TTS"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="XlU-X5-Egy" secondAttribute="trailing" id="C4c-ql-eDh"/>
-                    <constraint firstItem="XlU-X5-Egy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ccg-4P-Jcy"/>
+                    <constraint firstAttribute="trailing" secondItem="XlU-X5-Egy" secondAttribute="trailing" constant="10" id="C4c-ql-eDh"/>
+                    <constraint firstItem="XlU-X5-Egy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Ccg-4P-Jcy"/>
                     <constraint firstAttribute="bottom" secondItem="cz0-bT-23g" secondAttribute="bottom" constant="6" id="Ltb-tx-Ohy"/>
-                    <constraint firstItem="XlU-X5-Egy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Nla-ag-1q2"/>
-                    <constraint firstItem="cz0-bT-23g" firstAttribute="top" secondItem="XlU-X5-Egy" secondAttribute="bottom" id="STh-To-uJk"/>
-                    <constraint firstItem="cz0-bT-23g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="X4b-uL-WHI"/>
-                    <constraint firstAttribute="trailing" secondItem="cz0-bT-23g" secondAttribute="trailing" constant="6" id="bmQ-Zp-bdj"/>
+                    <constraint firstItem="XlU-X5-Egy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Nla-ag-1q2"/>
+                    <constraint firstItem="cz0-bT-23g" firstAttribute="top" secondItem="XlU-X5-Egy" secondAttribute="bottom" constant="2" id="STh-To-uJk"/>
+                    <constraint firstItem="cz0-bT-23g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="X4b-uL-WHI"/>
+                    <constraint firstAttribute="trailing" secondItem="cz0-bT-23g" secondAttribute="trailing" constant="10" id="bmQ-Zp-bdj"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

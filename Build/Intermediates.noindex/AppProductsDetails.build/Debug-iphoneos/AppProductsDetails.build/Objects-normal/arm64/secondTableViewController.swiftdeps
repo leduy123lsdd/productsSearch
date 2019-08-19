@@ -1,0 +1,753 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "secondTableViewController"
+provides-nominal:
+- "18AppProductsDetails25secondTableViewControllerC"
+provides-member:
+- ["18AppProductsDetails25secondTableViewControllerC", ""]
+provides-dynamic-lookup:
+- "tableView"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "CGFloat"
+- "CastingPrecedence"
+- "IndexPath"
+- "Int"
+- "String"
+- !private "UINib"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewController"
+- !private "pageTableViewCell"
+- "productDetail"
+- "secondTableViewController"
+- !private "segmentTableViewCell"
+- !private "thirdTableViewCell"
+- !private "~="
+depends-member:
+- !private ["SK", "row"]
+- !private ["So15CALayerDelegateP", "dequeueReusableCell"]
+- !private ["So15CALayerDelegateP", "deselectRow"]
+- !private ["So15CALayerDelegateP", "endEditing"]
+- !private ["So15CALayerDelegateP", "historyQuerry"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "productDetail"]
+- !private ["So15CALayerDelegateP", "products"]
+- !private ["So15CALayerDelegateP", "register"]
+- !private ["So15CALayerDelegateP", "urlString"]
+- !private ["s7CVarArgP", "UINib"]
+- !private ["s7CVarArgP", "UITableViewCell"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "dequeueReusableCell"]
+- !private ["s7CVarArgP", "deselectRow"]
+- !private ["s7CVarArgP", "endEditing"]
+- !private ["s7CVarArgP", "historyQuerry"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "navigationItem"]
+- !private ["s7CVarArgP", "product"]
+- !private ["s7CVarArgP", "productDetail"]
+- !private ["s7CVarArgP", "products"]
+- !private ["s7CVarArgP", "querryString"]
+- !private ["s7CVarArgP", "register"]
+- !private ["s7CVarArgP", "tableView"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "urlString"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "row"]
+- !private ["SL", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "UINib"]
+- !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "deselectRow"]
+- !private ["s28CustomDebugStringConvertibleP", "endEditing"]
+- !private ["s28CustomDebugStringConvertibleP", "historyQuerry"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
+- !private ["s28CustomDebugStringConvertibleP", "product"]
+- !private ["s28CustomDebugStringConvertibleP", "productDetail"]
+- !private ["s28CustomDebugStringConvertibleP", "products"]
+- !private ["s28CustomDebugStringConvertibleP", "querryString"]
+- !private ["s28CustomDebugStringConvertibleP", "register"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "tableView"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "urlString"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "endEditing"]
+- !private ["s17CustomReflectableP", "register"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s23CustomStringConvertibleP", "UINib"]
+- !private ["s23CustomStringConvertibleP", "UITableViewCell"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- !private ["s23CustomStringConvertibleP", "deselectRow"]
+- !private ["s23CustomStringConvertibleP", "endEditing"]
+- !private ["s23CustomStringConvertibleP", "historyQuerry"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
+- !private ["s23CustomStringConvertibleP", "product"]
+- !private ["s23CustomStringConvertibleP", "productDetail"]
+- !private ["s23CustomStringConvertibleP", "products"]
+- !private ["s23CustomStringConvertibleP", "querryString"]
+- !private ["s23CustomStringConvertibleP", "register"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "tableView"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "urlString"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["Se", "endEditing"]
+- !private ["Se", "images"]
+- !private ["Se", "register"]
+- !private ["Se", "row"]
+- !private ["SE", "endEditing"]
+- !private ["SE", "register"]
+- !private ["SE", "row"]
+- !private ["SQ", "UINib"]
+- !private ["SQ", "UITableViewCell"]
+- ["SQ", ""]
+- !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "deselectRow"]
+- !private ["SQ", "endEditing"]
+- !private ["SQ", "historyQuerry"]
+- !private ["SQ", "init"]
+- !private ["SQ", "navigationItem"]
+- !private ["SQ", "product"]
+- !private ["SQ", "productDetail"]
+- !private ["SQ", "products"]
+- !private ["SQ", "querryString"]
+- !private ["SQ", "register"]
+- !private ["SQ", "row"]
+- !private ["SQ", "tableView"]
+- !private ["SQ", "title"]
+- !private ["SQ", "urlString"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s23ExpressibleByNilLiteralP", "endEditing"]
+- !private ["s23ExpressibleByNilLiteralP", "register"]
+- !private ["SH", "UINib"]
+- !private ["SH", "UITableViewCell"]
+- ["SH", ""]
+- !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "deselectRow"]
+- !private ["SH", "endEditing"]
+- !private ["SH", "historyQuerry"]
+- !private ["SH", "init"]
+- !private ["SH", "navigationItem"]
+- !private ["SH", "product"]
+- !private ["SH", "productDetail"]
+- !private ["SH", "products"]
+- !private ["SH", "querryString"]
+- !private ["SH", "register"]
+- !private ["SH", "row"]
+- !private ["SH", "tableView"]
+- !private ["SH", "title"]
+- !private ["SH", "urlString"]
+- !private ["SH", "viewDidLoad"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["SM", "row"]
+- !private ["So8NSCodingP", "UINib"]
+- !private ["So8NSCodingP", "UITableViewCell"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "dequeueReusableCell"]
+- !private ["So8NSCodingP", "deselectRow"]
+- !private ["So8NSCodingP", "endEditing"]
+- !private ["So8NSCodingP", "historyQuerry"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "navigationItem"]
+- !private ["So8NSCodingP", "product"]
+- !private ["So8NSCodingP", "productDetail"]
+- !private ["So8NSCodingP", "products"]
+- !private ["So8NSCodingP", "querryString"]
+- !private ["So8NSCodingP", "register"]
+- !private ["So8NSCodingP", "tableView"]
+- !private ["So8NSCodingP", "title"]
+- !private ["So8NSCodingP", "urlString"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "UINib"]
+- !private ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
+- !private ["So26NSExtensionRequestHandlingP", "product"]
+- !private ["So26NSExtensionRequestHandlingP", "querryString"]
+- !private ["So26NSExtensionRequestHandlingP", "tableView"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UINib"]
+- ["So8NSObjectC", "UITableView"]
+- ["So8NSObjectC", "UITableViewCell"]
+- !private ["So8NSObjectC", "dequeueReusableCell"]
+- !private ["So8NSObjectC", "deselectRow"]
+- !private ["So8NSObjectC", "endEditing"]
+- !private ["So8NSObjectC", "historyQuerry"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "navigationItem"]
+- !private ["So8NSObjectC", "pageTableViewCell"]
+- ["So8NSObjectC", "product"]
+- ["So8NSObjectC", "productDetail"]
+- !private ["So8NSObjectC", "products"]
+- ["So8NSObjectC", "querryString"]
+- !private ["So8NSObjectC", "register"]
+- !private ["So8NSObjectC", "segmentTableViewCell"]
+- ["So8NSObjectC", "tableView"]
+- !private ["So8NSObjectC", "thirdTableViewCell"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "urlString"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillAppear"]
+- !private ["So8NSObjectP", "UINib"]
+- !private ["So8NSObjectP", "UITableViewCell"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "dequeueReusableCell"]
+- !private ["So8NSObjectP", "deselectRow"]
+- !private ["So8NSObjectP", "endEditing"]
+- !private ["So8NSObjectP", "historyQuerry"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "navigationItem"]
+- !private ["So8NSObjectP", "product"]
+- !private ["So8NSObjectP", "productDetail"]
+- !private ["So8NSObjectP", "products"]
+- !private ["So8NSObjectP", "querryString"]
+- !private ["So8NSObjectP", "register"]
+- !private ["So8NSObjectP", "tableView"]
+- !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "urlString"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sq", "endEditing"]
+- !private ["Sq", "register"]
+- !private ["Sk", "row"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["ST", "row"]
+- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "deselectRow"]
+- !private ["So29UIAccessibilityIdentificationP", "endEditing"]
+- !private ["So29UIAccessibilityIdentificationP", "historyQuerry"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "productDetail"]
+- !private ["So29UIAccessibilityIdentificationP", "products"]
+- !private ["So29UIAccessibilityIdentificationP", "register"]
+- !private ["So29UIAccessibilityIdentificationP", "urlString"]
+- !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "deselectRow"]
+- !private ["So12UIAppearanceP", "endEditing"]
+- !private ["So12UIAppearanceP", "historyQuerry"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "productDetail"]
+- !private ["So12UIAppearanceP", "products"]
+- !private ["So12UIAppearanceP", "register"]
+- !private ["So12UIAppearanceP", "urlString"]
+- !private ["So21UIAppearanceContainerP", "UINib"]
+- !private ["So21UIAppearanceContainerP", "UITableViewCell"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
+- !private ["So21UIAppearanceContainerP", "deselectRow"]
+- !private ["So21UIAppearanceContainerP", "endEditing"]
+- !private ["So21UIAppearanceContainerP", "historyQuerry"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "navigationItem"]
+- !private ["So21UIAppearanceContainerP", "product"]
+- !private ["So21UIAppearanceContainerP", "productDetail"]
+- !private ["So21UIAppearanceContainerP", "products"]
+- !private ["So21UIAppearanceContainerP", "querryString"]
+- !private ["So21UIAppearanceContainerP", "register"]
+- !private ["So21UIAppearanceContainerP", "tableView"]
+- !private ["So21UIAppearanceContainerP", "urlString"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So26UICollectionViewDataSourceP", "historyQuerry"]
+- !private ["So26UICollectionViewDataSourceP", "products"]
+- !private ["So26UICollectionViewDataSourceP", "urlString"]
+- !private ["So24UICollectionViewDelegateP", "historyQuerry"]
+- !private ["So24UICollectionViewDelegateP", "products"]
+- !private ["So24UICollectionViewDelegateP", "urlString"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "historyQuerry"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "products"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "urlString"]
+- !private ["So18UIContentContainerP", "UINib"]
+- !private ["So18UIContentContainerP", "UITableViewCell"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationItem"]
+- !private ["So18UIContentContainerP", "product"]
+- !private ["So18UIContentContainerP", "querryString"]
+- !private ["So18UIContentContainerP", "tableView"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
+- !private ["So17UICoordinateSpaceP", "deselectRow"]
+- !private ["So17UICoordinateSpaceP", "endEditing"]
+- !private ["So17UICoordinateSpaceP", "historyQuerry"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "productDetail"]
+- !private ["So17UICoordinateSpaceP", "products"]
+- !private ["So17UICoordinateSpaceP", "register"]
+- !private ["So17UICoordinateSpaceP", "urlString"]
+- !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So23UIDataSourceTranslatingP", "deselectRow"]
+- !private ["So23UIDataSourceTranslatingP", "endEditing"]
+- !private ["So23UIDataSourceTranslatingP", "register"]
+- !private ["So13UIDynamicItemP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "deselectRow"]
+- !private ["So13UIDynamicItemP", "endEditing"]
+- !private ["So13UIDynamicItemP", "historyQuerry"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "productDetail"]
+- !private ["So13UIDynamicItemP", "products"]
+- !private ["So13UIDynamicItemP", "register"]
+- !private ["So13UIDynamicItemP", "urlString"]
+- !private ["So18UIFocusEnvironmentP", "UINib"]
+- !private ["So18UIFocusEnvironmentP", "UITableViewCell"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UIFocusEnvironmentP", "deselectRow"]
+- !private ["So18UIFocusEnvironmentP", "endEditing"]
+- !private ["So18UIFocusEnvironmentP", "historyQuerry"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "navigationItem"]
+- !private ["So18UIFocusEnvironmentP", "product"]
+- !private ["So18UIFocusEnvironmentP", "productDetail"]
+- !private ["So18UIFocusEnvironmentP", "products"]
+- !private ["So18UIFocusEnvironmentP", "querryString"]
+- !private ["So18UIFocusEnvironmentP", "register"]
+- !private ["So18UIFocusEnvironmentP", "tableView"]
+- !private ["So18UIFocusEnvironmentP", "urlString"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "dequeueReusableCell"]
+- !private ["So11UIFocusItemP", "deselectRow"]
+- !private ["So11UIFocusItemP", "endEditing"]
+- !private ["So11UIFocusItemP", "historyQuerry"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "productDetail"]
+- !private ["So11UIFocusItemP", "products"]
+- !private ["So11UIFocusItemP", "register"]
+- !private ["So11UIFocusItemP", "urlString"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
+- !private ["So20UIFocusItemContainerP", "deselectRow"]
+- !private ["So20UIFocusItemContainerP", "endEditing"]
+- !private ["So20UIFocusItemContainerP", "historyQuerry"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "productDetail"]
+- !private ["So20UIFocusItemContainerP", "products"]
+- !private ["So20UIFocusItemContainerP", "register"]
+- !private ["So20UIFocusItemContainerP", "urlString"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
+- !private ["So30UIFocusItemScrollableContainerP", "deselectRow"]
+- !private ["So30UIFocusItemScrollableContainerP", "endEditing"]
+- !private ["So30UIFocusItemScrollableContainerP", "register"]
+- !private ["So27UIGestureRecognizerDelegateP", "historyQuerry"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "productDetail"]
+- !private ["So27UIGestureRecognizerDelegateP", "products"]
+- !private ["So27UIGestureRecognizerDelegateP", "urlString"]
+- !private ["So16UINavigationItemC", "title"]
+- !private ["So5UINibC", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "UINib"]
+- !private ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "deselectRow"]
+- !private ["So30UIPasteConfigurationSupportingP", "endEditing"]
+- !private ["So30UIPasteConfigurationSupportingP", "historyQuerry"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "product"]
+- !private ["So30UIPasteConfigurationSupportingP", "productDetail"]
+- !private ["So30UIPasteConfigurationSupportingP", "products"]
+- !private ["So30UIPasteConfigurationSupportingP", "querryString"]
+- !private ["So30UIPasteConfigurationSupportingP", "register"]
+- !private ["So30UIPasteConfigurationSupportingP", "tableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "urlString"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "CGFloat"]
+- ["So11UIResponderC", "IndexPath"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UINib"]
+- ["So11UIResponderC", "UITableView"]
+- ["So11UIResponderC", "UITableViewCell"]
+- !private ["So11UIResponderC", "dequeueReusableCell"]
+- !private ["So11UIResponderC", "deselectRow"]
+- !private ["So11UIResponderC", "endEditing"]
+- !private ["So11UIResponderC", "historyQuerry"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "navigationItem"]
+- !private ["So11UIResponderC", "pageTableViewCell"]
+- ["So11UIResponderC", "product"]
+- ["So11UIResponderC", "productDetail"]
+- !private ["So11UIResponderC", "products"]
+- ["So11UIResponderC", "querryString"]
+- !private ["So11UIResponderC", "register"]
+- !private ["So11UIResponderC", "segmentTableViewCell"]
+- ["So11UIResponderC", "tableView"]
+- !private ["So11UIResponderC", "thirdTableViewCell"]
+- !private ["So11UIResponderC", "urlString"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "UINib"]
+- !private ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
+- !private ["So30UIResponderStandardEditActionsP", "deselectRow"]
+- !private ["So30UIResponderStandardEditActionsP", "endEditing"]
+- !private ["So30UIResponderStandardEditActionsP", "historyQuerry"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
+- !private ["So30UIResponderStandardEditActionsP", "product"]
+- !private ["So30UIResponderStandardEditActionsP", "productDetail"]
+- !private ["So30UIResponderStandardEditActionsP", "products"]
+- !private ["So30UIResponderStandardEditActionsP", "querryString"]
+- !private ["So30UIResponderStandardEditActionsP", "register"]
+- !private ["So30UIResponderStandardEditActionsP", "tableView"]
+- !private ["So30UIResponderStandardEditActionsP", "urlString"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So12UIScrollViewC", "deselectRow"]
+- !private ["So12UIScrollViewC", "endEditing"]
+- !private ["So12UIScrollViewC", "register"]
+- !private ["So20UIScrollViewDelegateP", "UINib"]
+- !private ["So20UIScrollViewDelegateP", "UITableViewCell"]
+- ["So20UIScrollViewDelegateP", ""]
+- !private ["So20UIScrollViewDelegateP", "historyQuerry"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "navigationItem"]
+- !private ["So20UIScrollViewDelegateP", "product"]
+- !private ["So20UIScrollViewDelegateP", "products"]
+- !private ["So20UIScrollViewDelegateP", "querryString"]
+- !private ["So20UIScrollViewDelegateP", "tableView"]
+- !private ["So20UIScrollViewDelegateP", "urlString"]
+- !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "deselectRow"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "endEditing"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "register"]
+- !private ["So16UIStateRestoringP", "UINib"]
+- !private ["So16UIStateRestoringP", "UITableViewCell"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationItem"]
+- !private ["So16UIStateRestoringP", "product"]
+- !private ["So16UIStateRestoringP", "querryString"]
+- !private ["So16UIStateRestoringP", "tableView"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So11UITableViewC", "dequeueReusableCell"]
+- !private ["So11UITableViewC", "deselectRow"]
+- !private ["So11UITableViewC", "endEditing"]
+- !private ["So11UITableViewC", "register"]
+- !private ["So15UITableViewCellC", "historyQuerry"]
+- !private ["So15UITableViewCellC", "init"]
+- !private ["So15UITableViewCellC", "productDetail"]
+- !private ["So15UITableViewCellC", "products"]
+- !private ["So15UITableViewCellC", "urlString"]
+- ["So21UITableViewControllerC", "Bool"]
+- ["So21UITableViewControllerC", "CGFloat"]
+- ["So21UITableViewControllerC", "IndexPath"]
+- ["So21UITableViewControllerC", "Int"]
+- ["So21UITableViewControllerC", "String"]
+- !private ["So21UITableViewControllerC", "UINib"]
+- ["So21UITableViewControllerC", "UITableView"]
+- ["So21UITableViewControllerC", "UITableViewCell"]
+- ["So21UITableViewControllerC", ""]
+- ["So21UITableViewControllerC", "init"]
+- !private ["So21UITableViewControllerC", "navigationItem"]
+- !private ["So21UITableViewControllerC", "pageTableViewCell"]
+- ["So21UITableViewControllerC", "product"]
+- ["So21UITableViewControllerC", "productDetail"]
+- ["So21UITableViewControllerC", "querryString"]
+- !private ["So21UITableViewControllerC", "segmentTableViewCell"]
+- ["So21UITableViewControllerC", "tableView"]
+- !private ["So21UITableViewControllerC", "thirdTableViewCell"]
+- ["So21UITableViewControllerC", "viewDidLoad"]
+- ["So21UITableViewControllerC", "viewWillAppear"]
+- !private ["So21UITableViewDataSourceP", "UINib"]
+- !private ["So21UITableViewDataSourceP", "UITableViewCell"]
+- ["So21UITableViewDataSourceP", ""]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So21UITableViewDataSourceP", "navigationItem"]
+- !private ["So21UITableViewDataSourceP", "product"]
+- !private ["So21UITableViewDataSourceP", "querryString"]
+- !private ["So21UITableViewDataSourceP", "tableView"]
+- !private ["So21UITableViewDataSourceP", "viewDidLoad"]
+- !private ["So19UITableViewDelegateP", "UINib"]
+- !private ["So19UITableViewDelegateP", "UITableViewCell"]
+- ["So19UITableViewDelegateP", ""]
+- !private ["So19UITableViewDelegateP", "init"]
+- !private ["So19UITableViewDelegateP", "navigationItem"]
+- !private ["So19UITableViewDelegateP", "product"]
+- !private ["So19UITableViewDelegateP", "querryString"]
+- !private ["So19UITableViewDelegateP", "tableView"]
+- !private ["So19UITableViewDelegateP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "UINib"]
+- !private ["So18UITraitEnvironmentP", "UITableViewCell"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UITraitEnvironmentP", "deselectRow"]
+- !private ["So18UITraitEnvironmentP", "endEditing"]
+- !private ["So18UITraitEnvironmentP", "historyQuerry"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "navigationItem"]
+- !private ["So18UITraitEnvironmentP", "product"]
+- !private ["So18UITraitEnvironmentP", "productDetail"]
+- !private ["So18UITraitEnvironmentP", "products"]
+- !private ["So18UITraitEnvironmentP", "querryString"]
+- !private ["So18UITraitEnvironmentP", "register"]
+- !private ["So18UITraitEnvironmentP", "tableView"]
+- !private ["So18UITraitEnvironmentP", "urlString"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "UINib"]
+- !private ["So23UIUserActivityRestoringP", "UITableViewCell"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
+- !private ["So23UIUserActivityRestoringP", "deselectRow"]
+- !private ["So23UIUserActivityRestoringP", "endEditing"]
+- !private ["So23UIUserActivityRestoringP", "historyQuerry"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "navigationItem"]
+- !private ["So23UIUserActivityRestoringP", "product"]
+- !private ["So23UIUserActivityRestoringP", "productDetail"]
+- !private ["So23UIUserActivityRestoringP", "products"]
+- !private ["So23UIUserActivityRestoringP", "querryString"]
+- !private ["So23UIUserActivityRestoringP", "register"]
+- !private ["So23UIUserActivityRestoringP", "tableView"]
+- !private ["So23UIUserActivityRestoringP", "urlString"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "dequeueReusableCell"]
+- !private ["So6UIViewC", "deselectRow"]
+- !private ["So6UIViewC", "endEditing"]
+- !private ["So6UIViewC", "historyQuerry"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "productDetail"]
+- !private ["So6UIViewC", "products"]
+- !private ["So6UIViewC", "register"]
+- !private ["So6UIViewC", "urlString"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "CGFloat"]
+- ["So16UIViewControllerC", "IndexPath"]
+- ["So16UIViewControllerC", "Int"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UINib"]
+- ["So16UIViewControllerC", "UITableView"]
+- ["So16UIViewControllerC", "UITableViewCell"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationItem"]
+- !private ["So16UIViewControllerC", "pageTableViewCell"]
+- ["So16UIViewControllerC", "product"]
+- ["So16UIViewControllerC", "productDetail"]
+- ["So16UIViewControllerC", "querryString"]
+- !private ["So16UIViewControllerC", "segmentTableViewCell"]
+- ["So16UIViewControllerC", "tableView"]
+- !private ["So16UIViewControllerC", "thirdTableViewCell"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillAppear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deselectRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "historyQuerry"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "productDetail"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "products"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "querryString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "urlString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "endEditing"]
+- !private ["s21_ObjectiveCBridgeableP", "register"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "deselectRow"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "endEditing"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "historyQuerry"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "productDetail"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "products"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "register"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "urlString"]
+- !private ["18AppProductsDetails17pageTableViewCellC", "urlString"]
+- !private ["18AppProductsDetails13productDetailV", "images"]
+- ["18AppProductsDetails25secondTableViewControllerC", "Bool"]
+- ["18AppProductsDetails25secondTableViewControllerC", "CGFloat"]
+- ["18AppProductsDetails25secondTableViewControllerC", "IndexPath"]
+- ["18AppProductsDetails25secondTableViewControllerC", "Int"]
+- ["18AppProductsDetails25secondTableViewControllerC", "String"]
+- !private ["18AppProductsDetails25secondTableViewControllerC", "UINib"]
+- ["18AppProductsDetails25secondTableViewControllerC", "UITableView"]
+- ["18AppProductsDetails25secondTableViewControllerC", "UITableViewCell"]
+- ["18AppProductsDetails25secondTableViewControllerC", "deinit"]
+- ["18AppProductsDetails25secondTableViewControllerC", "init"]
+- !private ["18AppProductsDetails25secondTableViewControllerC", "navigationItem"]
+- !private ["18AppProductsDetails25secondTableViewControllerC", "pageTableViewCell"]
+- ["18AppProductsDetails25secondTableViewControllerC", "product"]
+- ["18AppProductsDetails25secondTableViewControllerC", "productDetail"]
+- ["18AppProductsDetails25secondTableViewControllerC", "querryString"]
+- !private ["18AppProductsDetails25secondTableViewControllerC", "segmentTableViewCell"]
+- ["18AppProductsDetails25secondTableViewControllerC", "tableView"]
+- !private ["18AppProductsDetails25secondTableViewControllerC", "thirdTableViewCell"]
+- ["18AppProductsDetails25secondTableViewControllerC", "viewDidLoad"]
+- ["18AppProductsDetails25secondTableViewControllerC", "viewWillAppear"]
+- !private ["18AppProductsDetails20segmentTableViewCellC", "productDetail"]
+- !private ["18AppProductsDetails18thirdTableViewCellC", "historyQuerry"]
+- !private ["18AppProductsDetails18thirdTableViewCellC", "products"]
+depends-nominal:
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "10Foundation9IndexPathV"
+- !private "SM"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "Sk"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So26UICollectionViewDataSourceP"
+- !private "So24UICollectionViewDelegateP"
+- !private "So34UICollectionViewDelegateFlowLayoutP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- !private "So27UIGestureRecognizerDelegateP"
+- !private "So16UINavigationItemC"
+- !private "So5UINibC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So11UITableViewC"
+- !private "So15UITableViewCellC"
+- "So21UITableViewControllerC"
+- "So21UITableViewDataSourceP"
+- "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+- !private "18AppProductsDetails17pageTableViewCellC"
+- !private "18AppProductsDetails13productDetailV"
+- "18AppProductsDetails25secondTableViewControllerC"
+- !private "18AppProductsDetails20segmentTableViewCellC"
+- !private "18AppProductsDetails18thirdTableViewCellC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "947cb3490e1e72fbad12df93ddded4d9"

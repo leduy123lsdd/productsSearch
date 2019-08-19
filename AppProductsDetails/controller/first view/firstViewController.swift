@@ -48,18 +48,16 @@ class firstViewController: UITableViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         tableView.keyboardDismissMode = .onDrag
-
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         searchBar.frame.size.height = 60
-        loadData(page: 1, limit: 5, query: "sony")
     }
     
     //MARK: - Table view datasource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         let data = listOfProducts[indexPath.row]
@@ -67,8 +65,18 @@ class firstViewController: UITableViewController {
         DispatchQueue.main.async {
             
             cell.nameOfProduct.text = data.name
-            let price = (String)(data.price.sellPrice ?? 0)
-            cell.price.text = (price != "0" ? "\(price) vnd" : "No information about price")
+            
+//            let price = (String)(data.price.sellPrice ?? 0)
+//
+//
+//            cell.price.text = (price != "0" ? "\(price) vnd" : "No information about price")
+            
+            let price = (data.price.sellPrice ?? 0) as NSNumber
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            formatter.locale = Locale(identifier: "vi_VN")
+            
+            cell.price.text = formatter.string(from: price)
             
             //load image
             let imageRs = UIImage(named: "image_unavailable")!
@@ -92,9 +100,12 @@ class firstViewController: UITableViewController {
         return cell
     }
     
+    
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "detailView", sender: self)
-        tableView.endEditing(true)
+//        tableView.endEditing(true)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -106,6 +117,8 @@ class firstViewController: UITableViewController {
             }
         }
     }
+    
+    
 
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         // UITableView only moves in one direction, y axis
@@ -128,7 +141,7 @@ class firstViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150.0
+        return 120.0
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

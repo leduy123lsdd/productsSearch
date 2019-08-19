@@ -66,7 +66,15 @@ class thirdTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
 //        cell.nameProduct.text = products[indexPath.row].name ?? "Unknow"
         let data = suggestList[indexPath.row]
         
-        cell.price.text = (String)(data.price.sellPrice ?? 0)
+//        cell.price.text = (String)(data.price.sellPrice ?? 0)
+        
+        let price = (data.price.sellPrice ?? 0) as NSNumber
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale(identifier: "vi_VN")
+        
+        cell.price.text = formatter.string(from: price)
+        
         cell.nameProduct.text = data.name
         
         DispatchQueue.main.async {
@@ -97,7 +105,7 @@ class thirdTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
 extension thirdTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 50, height: 100)
+        return CGSize(width: 100, height: 100)
     }
     
     

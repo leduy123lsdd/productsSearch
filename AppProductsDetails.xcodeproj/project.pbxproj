@@ -94,7 +94,6 @@
 				0C3AD60C2301729000F62F66 /* view */,
 				0C3AD60B2301728700F62F66 /* model */,
 				0C3AD60A2301727600F62F66 /* controller */,
-				0C3AD60F230176E900F62F66 /* productRequest.swift */,
 				0C0F7FF3230161BF00DC81B9 /* AppDelegate.swift */,
 				0C0F7FFF230161C000DC81B9 /* Info.plist */,
 				0C0F7FFA230161C000DC81B9 /* Assets.xcassets */,
@@ -103,18 +102,19 @@
 			path = AppProductsDetails;
 			sourceTree = "<group>";
 		};
-		0C3AD609230165CC00F62F66 /* table view cell in first view controller */ = {
+		0C3AD609230165CC00F62F66 /* cell */ = {
 			isa = PBXGroup;
 			children = (
 				0C0F80072301652C00DC81B9 /* TableViewCell.swift */,
 				0C0F80082301652C00DC81B9 /* TableViewCell.xib */,
 			);
-			path = "table view cell in first view controller";
+			path = cell;
 			sourceTree = "<group>";
 		};
 		0C3AD60A2301727600F62F66 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				0C3AD60F230176E900F62F66 /* productRequest.swift */,
 				0C4535E023054BBF00CF6436 /* first view */,
 				0C4535E123054BD800CF6436 /* second view */,
 			);
@@ -151,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				0C0F7FF5230161BF00DC81B9 /* firstViewController.swift */,
-				0C3AD609230165CC00F62F66 /* table view cell in first view controller */,
+				0C3AD609230165CC00F62F66 /* cell */,
 			);
 			path = "first view";
 			sourceTree = "<group>";

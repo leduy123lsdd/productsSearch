@@ -69,7 +69,7 @@ class secondTableViewController: UITableViewController {
             return 150.0
         }
         if indexPath.row == 2 {
-            return 200.0
+            return 130.0
         }
         return 0.0
     }

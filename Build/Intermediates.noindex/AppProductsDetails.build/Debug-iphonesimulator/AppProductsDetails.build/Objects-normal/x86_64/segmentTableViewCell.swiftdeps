@@ -12,16 +12,15 @@ provides-dynamic-lookup:
 - "setSelected"
 - "textfieldControl"
 depends-top-level:
-- !private "+"
-- !private "/"
-- !private "=="
 - "AssignmentPrecedence"
 - "Bool"
+- "CastingPrecedence"
 - "FloatLiteralType"
 - "IntegerLiteralType"
-- !private "String"
+- !private "Locale"
+- !private "NSNumber"
+- !private "NumberFormatter"
 - "StringLiteralType"
-- "TernaryPrecedence"
 - "UISegmentedControl"
 - "UITableViewCell"
 - "UITextView"
@@ -29,8 +28,8 @@ depends-top-level:
 - "segmentTableViewCell"
 - !private "~="
 depends-member:
-- !private ["SK", "init"]
-- !private ["So15CALayerDelegateP", "String"]
+- !private ["So15CALayerDelegateP", "Locale"]
+- !private ["So15CALayerDelegateP", "NumberFormatter"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
 - !private ["So15CALayerDelegateP", "brand"]
@@ -47,13 +46,16 @@ depends-member:
 - !private ["So15CALayerDelegateP", "setSelected"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "textfieldControl"]
-- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "Locale"]
+- !private ["s7CVarArgP", "NumberFormatter"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "awakeFromNib"]
 - !private ["s7CVarArgP", "brand"]
 - !private ["s7CVarArgP", "descriptionProduct"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "locale"]
 - !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "numberStyle"]
 - !private ["s7CVarArgP", "price"]
 - !private ["s7CVarArgP", "productDetail"]
 - !private ["s7CVarArgP", "productType"]
@@ -62,17 +64,19 @@ depends-member:
 - !private ["s7CVarArgP", "segmentControl"]
 - !private ["s7CVarArgP", "selectedSegmentIndex"]
 - !private ["s7CVarArgP", "setSelected"]
+- !private ["s7CVarArgP", "string"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "textfieldControl"]
-- !private ["Sl", "init"]
-- !private ["SL", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "Locale"]
+- !private ["s28CustomDebugStringConvertibleP", "NumberFormatter"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
 - !private ["s28CustomDebugStringConvertibleP", "brand"]
 - !private ["s28CustomDebugStringConvertibleP", "descriptionProduct"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "locale"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "numberStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "price"]
 - !private ["s28CustomDebugStringConvertibleP", "productDetail"]
 - !private ["s28CustomDebugStringConvertibleP", "productType"]
@@ -81,13 +85,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "segmentControl"]
 - !private ["s28CustomDebugStringConvertibleP", "selectedSegmentIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "textfieldControl"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "reloadInputViews"]
 - !private ["s17CustomReflectableP", "selectedSegmentIndex"]
 - !private ["s17CustomReflectableP", "text"]
-- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "Locale"]
+- !private ["s23CustomStringConvertibleP", "NumberFormatter"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
@@ -95,7 +101,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "brand"]
 - !private ["s23CustomStringConvertibleP", "descriptionProduct"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "locale"]
 - !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "numberStyle"]
 - !private ["s23CustomStringConvertibleP", "price"]
 - !private ["s23CustomStringConvertibleP", "productDetail"]
 - !private ["s23CustomStringConvertibleP", "productType"]
@@ -104,6 +112,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "segmentControl"]
 - !private ["s23CustomStringConvertibleP", "selectedSegmentIndex"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["s23CustomStringConvertibleP", "string"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "textfieldControl"]
 - !private ["Se", "brand"]
@@ -123,13 +132,17 @@ depends-member:
 - !private ["SE", "reloadInputViews"]
 - !private ["SE", "selectedSegmentIndex"]
 - !private ["SE", "text"]
-- !private ["SQ", "String"]
+- !private ["SQ", "Locale"]
+- !private ["SQ", "NumberFormatter"]
 - ["SQ", ""]
 - !private ["SQ", "awakeFromNib"]
 - !private ["SQ", "brand"]
+- !private ["SQ", "currency"]
 - !private ["SQ", "descriptionProduct"]
 - !private ["SQ", "init"]
+- !private ["SQ", "locale"]
 - !private ["SQ", "name"]
+- !private ["SQ", "numberStyle"]
 - !private ["SQ", "price"]
 - !private ["SQ", "productDetail"]
 - !private ["SQ", "productType"]
@@ -138,22 +151,27 @@ depends-member:
 - !private ["SQ", "segmentControl"]
 - !private ["SQ", "selectedSegmentIndex"]
 - !private ["SQ", "setSelected"]
+- !private ["SQ", "string"]
 - !private ["SQ", "text"]
 - !private ["SQ", "textfieldControl"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadInputViews"]
 - !private ["s23ExpressibleByNilLiteralP", "selectedSegmentIndex"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
-- !private ["s32ExpressibleByStringInterpolationP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["SH", "String"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "locale"]
+- !private ["So11NSFormatterC", "numberStyle"]
+- !private ["So11NSFormatterC", "string"]
+- !private ["SH", "Locale"]
+- !private ["SH", "NumberFormatter"]
 - ["SH", ""]
 - !private ["SH", "awakeFromNib"]
 - !private ["SH", "brand"]
+- !private ["SH", "currency"]
 - !private ["SH", "descriptionProduct"]
 - !private ["SH", "init"]
+- !private ["SH", "locale"]
 - !private ["SH", "name"]
+- !private ["SH", "numberStyle"]
 - !private ["SH", "price"]
 - !private ["SH", "productDetail"]
 - !private ["SH", "productType"]
@@ -162,17 +180,20 @@ depends-member:
 - !private ["SH", "segmentControl"]
 - !private ["SH", "selectedSegmentIndex"]
 - !private ["SH", "setSelected"]
+- !private ["SH", "string"]
 - !private ["SH", "text"]
 - !private ["SH", "textfieldControl"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "String"]
+- !private ["10Foundation6LocaleV", "init"]
+- !private ["So8NSCodingP", "Locale"]
+- !private ["So8NSCodingP", "NumberFormatter"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "brand"]
 - !private ["So8NSCodingP", "descriptionProduct"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "locale"]
 - !private ["So8NSCodingP", "name"]
+- !private ["So8NSCodingP", "numberStyle"]
 - !private ["So8NSCodingP", "price"]
 - !private ["So8NSCodingP", "productDetail"]
 - !private ["So8NSCodingP", "productType"]
@@ -181,17 +202,26 @@ depends-member:
 - !private ["So8NSCodingP", "segmentControl"]
 - !private ["So8NSCodingP", "selectedSegmentIndex"]
 - !private ["So8NSCodingP", "setSelected"]
+- !private ["So8NSCodingP", "string"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "textfieldControl"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "locale"]
+- !private ["So9NSCopyingP", "numberStyle"]
+- !private ["So9NSCopyingP", "string"]
 - ["So8NSObjectC", "Bool"]
-- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "Locale"]
+- !private ["So8NSObjectC", "NSNumber"]
+- !private ["So8NSObjectC", "NumberFormatter"]
 - ["So8NSObjectC", "UISegmentedControl"]
 - ["So8NSObjectC", "UITextView"]
 - ["So8NSObjectC", "awakeFromNib"]
 - ["So8NSObjectC", "brand"]
 - ["So8NSObjectC", "descriptionProduct"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "locale"]
 - ["So8NSObjectC", "name"]
+- !private ["So8NSObjectC", "numberStyle"]
 - ["So8NSObjectC", "price"]
 - ["So8NSObjectC", "productDetail"]
 - ["So8NSObjectC", "productType"]
@@ -200,15 +230,19 @@ depends-member:
 - ["So8NSObjectC", "segmentControl"]
 - !private ["So8NSObjectC", "selectedSegmentIndex"]
 - ["So8NSObjectC", "setSelected"]
+- !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textfieldControl"]
-- !private ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "Locale"]
+- !private ["So8NSObjectP", "NumberFormatter"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
 - !private ["So8NSObjectP", "brand"]
 - !private ["So8NSObjectP", "descriptionProduct"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "locale"]
 - !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "numberStyle"]
 - !private ["So8NSObjectP", "price"]
 - !private ["So8NSObjectP", "productDetail"]
 - !private ["So8NSObjectP", "productType"]
@@ -217,22 +251,25 @@ depends-member:
 - !private ["So8NSObjectP", "segmentControl"]
 - !private ["So8NSObjectP", "selectedSegmentIndex"]
 - !private ["So8NSObjectP", "setSelected"]
+- !private ["So8NSObjectP", "string"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "textfieldControl"]
+- !private ["So17NSNumberFormatterC", "init"]
+- !private ["So17NSNumberFormatterC", "locale"]
+- !private ["So17NSNumberFormatterC", "numberStyle"]
+- !private ["So17NSNumberFormatterC", "string"]
 - !private ["Sq", "reloadInputViews"]
 - !private ["Sq", "selectedSegmentIndex"]
 - !private ["Sq", "text"]
-- !private ["Sm", "init"]
-- !private ["ST", "init"]
-- !private ["SS", "init"]
+- !private ["SY", "currency"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["Sy", "init"]
+- !private ["So22NSNumberFormatterStyleV", "currency"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["So29UIAccessibilityIdentificationP", "String"]
+- !private ["So29UIAccessibilityIdentificationP", "Locale"]
+- !private ["So29UIAccessibilityIdentificationP", "NumberFormatter"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "brand"]
@@ -249,7 +286,8 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textfieldControl"]
-- !private ["So12UIAppearanceP", "String"]
+- !private ["So12UIAppearanceP", "Locale"]
+- !private ["So12UIAppearanceP", "NumberFormatter"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
 - !private ["So12UIAppearanceP", "brand"]
@@ -266,7 +304,8 @@ depends-member:
 - !private ["So12UIAppearanceP", "setSelected"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textfieldControl"]
-- !private ["So21UIAppearanceContainerP", "String"]
+- !private ["So21UIAppearanceContainerP", "Locale"]
+- !private ["So21UIAppearanceContainerP", "NumberFormatter"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
 - !private ["So21UIAppearanceContainerP", "brand"]
@@ -286,7 +325,8 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "reloadInputViews"]
 - !private ["So9UIControlC", "selectedSegmentIndex"]
-- !private ["So17UICoordinateSpaceP", "String"]
+- !private ["So17UICoordinateSpaceP", "Locale"]
+- !private ["So17UICoordinateSpaceP", "NumberFormatter"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
 - !private ["So17UICoordinateSpaceP", "brand"]
@@ -303,7 +343,8 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "setSelected"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "textfieldControl"]
-- !private ["So13UIDynamicItemP", "String"]
+- !private ["So13UIDynamicItemP", "Locale"]
+- !private ["So13UIDynamicItemP", "NumberFormatter"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
 - !private ["So13UIDynamicItemP", "brand"]
@@ -320,7 +361,8 @@ depends-member:
 - !private ["So13UIDynamicItemP", "setSelected"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textfieldControl"]
-- !private ["So18UIFocusEnvironmentP", "String"]
+- !private ["So18UIFocusEnvironmentP", "Locale"]
+- !private ["So18UIFocusEnvironmentP", "NumberFormatter"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
 - !private ["So18UIFocusEnvironmentP", "brand"]
@@ -337,7 +379,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "textfieldControl"]
-- !private ["So11UIFocusItemP", "String"]
+- !private ["So11UIFocusItemP", "Locale"]
+- !private ["So11UIFocusItemP", "NumberFormatter"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
 - !private ["So11UIFocusItemP", "brand"]
@@ -354,7 +397,8 @@ depends-member:
 - !private ["So11UIFocusItemP", "setSelected"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "textfieldControl"]
-- !private ["So20UIFocusItemContainerP", "String"]
+- !private ["So20UIFocusItemContainerP", "Locale"]
+- !private ["So20UIFocusItemContainerP", "NumberFormatter"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
 - !private ["So20UIFocusItemContainerP", "brand"]
@@ -372,7 +416,8 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "textfieldControl"]
 - !private ["So30UIFocusItemScrollableContainerP", "text"]
-- !private ["So27UIGestureRecognizerDelegateP", "String"]
+- !private ["So27UIGestureRecognizerDelegateP", "Locale"]
+- !private ["So27UIGestureRecognizerDelegateP", "NumberFormatter"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
 - !private ["So27UIGestureRecognizerDelegateP", "brand"]
@@ -387,7 +432,8 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
 - !private ["So27UIGestureRecognizerDelegateP", "textfieldControl"]
 - !private ["So10UIKeyInputP", "text"]
-- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- !private ["So30UIPasteConfigurationSupportingP", "Locale"]
+- !private ["So30UIPasteConfigurationSupportingP", "NumberFormatter"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "brand"]
@@ -405,7 +451,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "textfieldControl"]
 - ["So11UIResponderC", "Bool"]
-- !private ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "Locale"]
+- !private ["So11UIResponderC", "NSNumber"]
+- !private ["So11UIResponderC", "NumberFormatter"]
 - ["So11UIResponderC", "UISegmentedControl"]
 - ["So11UIResponderC", "UITextView"]
 - ["So11UIResponderC", "awakeFromNib"]
@@ -423,7 +471,8 @@ depends-member:
 - ["So11UIResponderC", "setSelected"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "textfieldControl"]
-- !private ["So30UIResponderStandardEditActionsP", "String"]
+- !private ["So30UIResponderStandardEditActionsP", "Locale"]
+- !private ["So30UIResponderStandardEditActionsP", "NumberFormatter"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "brand"]
@@ -446,7 +495,9 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadInputViews"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "selectedSegmentIndex"]
 - ["So15UITableViewCellC", "Bool"]
-- !private ["So15UITableViewCellC", "String"]
+- !private ["So15UITableViewCellC", "Locale"]
+- !private ["So15UITableViewCellC", "NSNumber"]
+- !private ["So15UITableViewCellC", "NumberFormatter"]
 - ["So15UITableViewCellC", "UISegmentedControl"]
 - ["So15UITableViewCellC", "UITextView"]
 - ["So15UITableViewCellC", ""]
@@ -468,7 +519,8 @@ depends-member:
 - !private ["So17UITextInputTraitsP", "text"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So10UITextViewC", "text"]
-- !private ["So18UITraitEnvironmentP", "String"]
+- !private ["So18UITraitEnvironmentP", "Locale"]
+- !private ["So18UITraitEnvironmentP", "NumberFormatter"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "brand"]
@@ -485,7 +537,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setSelected"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "textfieldControl"]
-- !private ["So23UIUserActivityRestoringP", "String"]
+- !private ["So23UIUserActivityRestoringP", "Locale"]
+- !private ["So23UIUserActivityRestoringP", "NumberFormatter"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
 - !private ["So23UIUserActivityRestoringP", "brand"]
@@ -503,7 +556,9 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "textfieldControl"]
 - ["So6UIViewC", "Bool"]
-- !private ["So6UIViewC", "String"]
+- !private ["So6UIViewC", "Locale"]
+- !private ["So6UIViewC", "NSNumber"]
+- !private ["So6UIViewC", "NumberFormatter"]
 - ["So6UIViewC", "UISegmentedControl"]
 - ["So6UIViewC", "UITextView"]
 - ["So6UIViewC", "awakeFromNib"]
@@ -521,18 +576,16 @@ depends-member:
 - ["So6UIViewC", "setSelected"]
 - !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "textfieldControl"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s19_HasContiguousBytesP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Locale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NumberFormatter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "brand"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionProduct"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "locale"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "price"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "productDetail"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "productType"]
@@ -541,13 +594,15 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "segmentControl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedSegmentIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textfieldControl"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "reloadInputViews"]
 - !private ["s21_ObjectiveCBridgeableP", "selectedSegmentIndex"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "String"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "Locale"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "NumberFormatter"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "brand"]
@@ -573,7 +628,9 @@ depends-member:
 - !private ["18AppProductsDetails13productDetailV", "seoInfo"]
 - !private ["18AppProductsDetails15productTypeInfoV", "name"]
 - ["18AppProductsDetails20segmentTableViewCellC", "Bool"]
-- !private ["18AppProductsDetails20segmentTableViewCellC", "String"]
+- !private ["18AppProductsDetails20segmentTableViewCellC", "Locale"]
+- !private ["18AppProductsDetails20segmentTableViewCellC", "NSNumber"]
+- !private ["18AppProductsDetails20segmentTableViewCellC", "NumberFormatter"]
 - ["18AppProductsDetails20segmentTableViewCellC", "UISegmentedControl"]
 - ["18AppProductsDetails20segmentTableViewCellC", "UITextView"]
 - ["18AppProductsDetails20segmentTableViewCellC", "awakeFromNib"]
@@ -591,11 +648,8 @@ depends-member:
 - ["18AppProductsDetails20segmentTableViewCellC", "textfieldControl"]
 - !private ["18AppProductsDetails7seoInfoV", "description"]
 depends-nominal:
-- !private "SK"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "Sl"
-- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -603,25 +657,21 @@ depends-nominal:
 - !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - "SQ"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So11NSFormatterC"
 - "SH"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
+- !private "10Foundation6LocaleV"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So17NSNumberFormatterC"
 - !private "Sq"
-- !private "Sm"
-- !private "ST"
-- !private "SS"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
 - !private "s27StringInterpolationProtocolP"
-- !private "Sy"
+- !private "So22NSNumberFormatterStyleV"
 - !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -651,11 +701,6 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s19_HasContiguousBytesP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "s38__DefaultCustomPlaygroundQuickLookableP"

@@ -47,8 +47,16 @@ class segmentTableViewCell: UITableViewCell {
     @IBAction func segmentAction(_ sender: UISegmentedControl) {
         switch segmentControl.selectedSegmentIndex {
         case 0:
-            let priceString = price == 0 ? "No information" : String(price/1000) + ".000"
-            textfieldControl.text = "Price: \(priceString) VNĐ \nBrand: \(brand)"
+            var priceString = ""
+            
+            let _price = price as NSNumber
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            formatter.locale = Locale(identifier: "vi_VN")
+            
+            priceString = formatter.string(from: _price)!
+            
+            textfieldControl.text = "Price: \(priceString) \nBrand: \(brand)"
         case 1:
             textfieldControl.text = "Description: \(descriptionProduct) \nName: \(name)"
         case 2:

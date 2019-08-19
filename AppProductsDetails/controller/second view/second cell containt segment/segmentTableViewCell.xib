@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kQZ-Vr-NLU">
-                        <rect key="frame" x="0.0" y="0.0" width="415" height="31"/>
+                        <rect key="frame" x="10" y="0.0" width="395" height="31"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="JL2-RH-8nK"/>
                         </constraints>
@@ -34,21 +34,21 @@
                         </connections>
                     </segmentedControl>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="MzG-Uo-vRb">
-                        <rect key="frame" x="0.0" y="35" width="415" height="277.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="frame" x="10" y="33" width="395" height="279.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="MzG-Uo-vRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CZu-kj-E8g"/>
+                    <constraint firstItem="MzG-Uo-vRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CZu-kj-E8g"/>
                     <constraint firstItem="kQZ-Vr-NLU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eXD-26-WAU"/>
-                    <constraint firstItem="kQZ-Vr-NLU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gdl-uG-64v"/>
-                    <constraint firstAttribute="trailing" secondItem="MzG-Uo-vRb" secondAttribute="trailing" id="hzT-Ly-VVF"/>
-                    <constraint firstItem="MzG-Uo-vRb" firstAttribute="top" secondItem="kQZ-Vr-NLU" secondAttribute="bottom" constant="5" id="oMB-1V-Jh1"/>
+                    <constraint firstItem="kQZ-Vr-NLU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gdl-uG-64v"/>
+                    <constraint firstAttribute="trailing" secondItem="MzG-Uo-vRb" secondAttribute="trailing" constant="10" id="hzT-Ly-VVF"/>
+                    <constraint firstItem="MzG-Uo-vRb" firstAttribute="top" secondItem="kQZ-Vr-NLU" secondAttribute="bottom" constant="3" id="oMB-1V-Jh1"/>
                     <constraint firstAttribute="bottom" secondItem="MzG-Uo-vRb" secondAttribute="bottom" id="qxN-Q4-20a"/>
-                    <constraint firstAttribute="trailing" secondItem="kQZ-Vr-NLU" secondAttribute="trailing" id="xxU-3S-0QD"/>
+                    <constraint firstAttribute="trailing" secondItem="kQZ-Vr-NLU" secondAttribute="trailing" constant="10" id="xxU-3S-0QD"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -56,7 +56,7 @@
                 <outlet property="segmentControl" destination="kQZ-Vr-NLU" id="Syx-kh-UhR"/>
                 <outlet property="textfieldControl" destination="MzG-Uo-vRb" id="dRW-Q8-Nfn"/>
             </connections>
-            <point key="canvasLocation" x="51" y="118"/>
+            <point key="canvasLocation" x="153" y="53"/>
         </tableViewCell>
     </objects>
 </document>

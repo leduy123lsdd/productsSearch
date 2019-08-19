@@ -1,15 +1,15 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "7538684f45ab26ec18f8a4b8019b01dc"
-build_time: [1566114212, 163446000]
+build_time: [1566201342, 456465000]
 inputs:
-  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/second cell containt segment/segmentTableViewCell.swift": [1566114212, 90889349]
-  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/first view/firstViewController.swift": [1566112973, 245907997]
-  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/secondTableViewController.swift": [1565942780, 36545297]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/second cell containt segment/segmentTableViewCell.swift": [1566201342, 383508675]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/first view/firstViewController.swift": [1566200967, 261812578]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/secondTableViewController.swift": [1566187249, 765962245]
   "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/pageViewCell in first cell in tableview/cell for collection view/CollectionViewCell.swift": [1565921335, 232658575]
   "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/pageViewCell in first cell in tableview/pageTableViewCell.swift": [1566110634, 341093957]
-  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/third cell/thirdTableViewCell.swift": [1565942780, 12476332]
-  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/productRequest.swift": [1565940593, 679821467]
-  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/first view/table view cell in first view controller/TableViewCell.swift": [1565603087, 986678156]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/third cell/thirdTableViewCell.swift": [1566201057, 979032132]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/productRequest.swift": [1565940593, 679821467]
+  "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/first view/cell/TableViewCell.swift": [1565603087, 986678156]
   "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/controller/second view/third cell/cell for collectionview/suggestCollectionViewCell.swift": [1565926894, 310710709]
   "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/AppDelegate.swift": [1565600319, 78876776]
   "/Users/leduy/Desktop/AppProductsDetails/AppProductsDetails/model/products.swift": [1565924921, 358272015]

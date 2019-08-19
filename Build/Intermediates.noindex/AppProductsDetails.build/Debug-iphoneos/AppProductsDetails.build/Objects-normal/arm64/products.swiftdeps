@@ -1,0 +1,258 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "priceInfo"
+- "seoInfo"
+- "imageDetail"
+- "brandInfo"
+- "productTypeInfo"
+- "productDetail"
+- "products"
+- "productResult"
+provides-nominal:
+- "18AppProductsDetails9priceInfoV"
+- "18AppProductsDetails7seoInfoV"
+- "18AppProductsDetails11imageDetailV"
+- "18AppProductsDetails9brandInfoV"
+- "18AppProductsDetails15productTypeInfoV"
+- "18AppProductsDetails13productDetailV"
+- "18AppProductsDetails8productsV"
+- "18AppProductsDetails13productResultV"
+provides-member:
+- ["18AppProductsDetails9priceInfoV", ""]
+- ["18AppProductsDetails7seoInfoV", ""]
+- ["18AppProductsDetails11imageDetailV", ""]
+- ["18AppProductsDetails9brandInfoV", ""]
+- ["18AppProductsDetails15productTypeInfoV", ""]
+- ["18AppProductsDetails13productDetailV", ""]
+- ["18AppProductsDetails8productsV", ""]
+- ["18AppProductsDetails13productResultV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "Decodable"
+- "Int"
+- "String"
+- !private "StringLiteralType"
+- "brandInfo"
+- "imageDetail"
+- "priceInfo"
+- "productDetail"
+- "productResult"
+- "productTypeInfo"
+- "products"
+- "seoInfo"
+- !private "~="
+depends-member:
+- ["s9CodingKeyP", "=="]
+- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- !private ["Se", "brand"]
+- !private ["Se", "description"]
+- !private ["Se", "images"]
+- ["Se", "init"]
+- !private ["Se", "name"]
+- !private ["Se", "price"]
+- !private ["Se", "productType"]
+- !private ["Se", "products"]
+- !private ["Se", "result"]
+- !private ["Se", "sellPrice"]
+- !private ["Se", "seoInfo"]
+- !private ["Se", "url"]
+- !private ["s7DecoderP", "container"]
+- ["SQ", "=="]
+- !private ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- !private ["SH", ""]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- ["18AppProductsDetails9brandInfoV", "String"]
+- ["18AppProductsDetails9brandInfoV", "deinit"]
+- ["18AppProductsDetails9brandInfoV", "init"]
+- ["18AppProductsDetails9brandInfoV", "name"]
+- ["18AppProductsDetails11imageDetailV", "String"]
+- ["18AppProductsDetails11imageDetailV", "deinit"]
+- ["18AppProductsDetails11imageDetailV", "init"]
+- ["18AppProductsDetails11imageDetailV", "url"]
+- ["18AppProductsDetails9priceInfoV", "Int"]
+- ["18AppProductsDetails9priceInfoV", "deinit"]
+- ["18AppProductsDetails9priceInfoV", "init"]
+- ["18AppProductsDetails9priceInfoV", "sellPrice"]
+- ["18AppProductsDetails13productDetailV", "String"]
+- ["18AppProductsDetails13productDetailV", "brand"]
+- ["18AppProductsDetails13productDetailV", "brandInfo"]
+- ["18AppProductsDetails13productDetailV", "deinit"]
+- ["18AppProductsDetails13productDetailV", "imageDetail"]
+- ["18AppProductsDetails13productDetailV", "images"]
+- ["18AppProductsDetails13productDetailV", "init"]
+- ["18AppProductsDetails13productDetailV", "name"]
+- ["18AppProductsDetails13productDetailV", "price"]
+- ["18AppProductsDetails13productDetailV", "priceInfo"]
+- ["18AppProductsDetails13productDetailV", "productType"]
+- ["18AppProductsDetails13productDetailV", "productTypeInfo"]
+- ["18AppProductsDetails13productDetailV", "seoInfo"]
+- ["18AppProductsDetails13productResultV", "deinit"]
+- ["18AppProductsDetails13productResultV", "init"]
+- ["18AppProductsDetails13productResultV", "products"]
+- ["18AppProductsDetails13productResultV", "result"]
+- ["18AppProductsDetails15productTypeInfoV", "String"]
+- ["18AppProductsDetails15productTypeInfoV", "deinit"]
+- ["18AppProductsDetails15productTypeInfoV", "init"]
+- ["18AppProductsDetails15productTypeInfoV", "name"]
+- ["18AppProductsDetails8productsV", "deinit"]
+- ["18AppProductsDetails8productsV", "init"]
+- ["18AppProductsDetails8productsV", "productDetail"]
+- ["18AppProductsDetails8productsV", "products"]
+- ["18AppProductsDetails7seoInfoV", "String"]
+- ["18AppProductsDetails7seoInfoV", "deinit"]
+- ["18AppProductsDetails7seoInfoV", "description"]
+- ["18AppProductsDetails7seoInfoV", "init"]
+depends-nominal:
+- "s9CodingKeyP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- "18AppProductsDetails9brandInfoV"
+- "18AppProductsDetails11imageDetailV"
+- "18AppProductsDetails9priceInfoV"
+- "18AppProductsDetails13productDetailV"
+- "18AppProductsDetails13productResultV"
+- "18AppProductsDetails15productTypeInfoV"
+- "18AppProductsDetails8productsV"
+- "18AppProductsDetails7seoInfoV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/leduy/Desktop/AppProductsDetails/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "9960d0dbc81069b52004bdefc96999f7"
