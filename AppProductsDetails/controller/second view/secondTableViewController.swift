@@ -16,10 +16,11 @@ class secondTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "pageTableViewCell", bundle: nil), forCellReuseIdentifier: "firtCell")
-        tableView.register(UINib(nibName: "segmentTableViewCell", bundle: nil), forCellReuseIdentifier: "secondCell")
+        tableView.register(UINib(nibName: "scrollTableViewCell", bundle: nil), forCellReuseIdentifier: "secondCell")
         tableView.register(UINib(nibName: "thirdTableViewCell", bundle: nil), forCellReuseIdentifier: "thirdCell")
         navigationItem.title = querryString!
         tableView.endEditing(true)
+        tableView.backgroundColor = .purple
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +35,7 @@ class secondTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell_1 : pageTableViewCell
-        var cell_2 : segmentTableViewCell
+        var cell_2 : scrollTableViewCell
         var cell_3 : thirdTableViewCell
         let cell_4 = UITableViewCell()
         
@@ -44,8 +45,10 @@ class secondTableViewController: UITableViewController {
             cell_1.urlString = (product?.images!)!
             return cell_1
         case 1:
-            cell_2 = tableView.dequeueReusableCell(withIdentifier: "secondCell", for: indexPath) as! segmentTableViewCell
+            cell_2 = tableView.dequeueReusableCell(withIdentifier: "secondCell", for: indexPath) as! scrollTableViewCell
+            
             cell_2.productDetail = product
+//            cell_2.backgroundColor = .purple
             return cell_2
         case 2 :
             cell_3 = tableView.dequeueReusableCell(withIdentifier: "thirdCell", for: indexPath) as! thirdTableViewCell

@@ -280,6 +280,38 @@ SWIFT_CLASS("_TtC18AppProductsDetails17pageTableViewCell")
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class UITextView;
+
+SWIFT_CLASS("_TtC18AppProductsDetails20scrollCollectionCell")
+@interface scrollCollectionCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textField;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISegmentedControl;
+
+SWIFT_CLASS("_TtC18AppProductsDetails19scrollTableViewCell")
+@interface scrollTableViewCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segment;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (IBAction)segmentAction:(UISegmentedControl * _Nonnull)sender;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface scrollTableViewCell (SWIFT_EXTENSION(AppProductsDetails)) <UICollectionViewDelegateFlowLayout>
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 SWIFT_CLASS("_TtC18AppProductsDetails25secondTableViewController")
 @interface secondTableViewController : UITableViewController
@@ -294,8 +326,6 @@ SWIFT_CLASS("_TtC18AppProductsDetails25secondTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextView;
-@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC18AppProductsDetails20segmentTableViewCell")
 @interface segmentTableViewCell : UITableViewCell

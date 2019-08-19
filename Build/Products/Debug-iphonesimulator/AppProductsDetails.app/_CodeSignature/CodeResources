@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		hxRwmlsam1dOsiAvVO/kCUH1Emw=
+		I09/DxEkpI0v20AcTyTjqr0ZNWI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -136,6 +136,14 @@
 		<data>
 		UpkBmZnLMq+oB09GC70vjdwHNoE=
 		</data>
+		<key>scrollCollectionCell.nib</key>
+		<data>
+		Tpgcl801LYPRT51nLO7Jf5HvKlE=
+		</data>
+		<key>scrollTableViewCell.nib</key>
+		<data>
+		I90Cu1ResQ2nZBfKX82yVbZAA/8=
+		</data>
 		<key>segmentTableViewCell.nib</key>
 		<data>
 		gOM5h+MISBkrK3rTlvLa/sRxzHo=
@@ -155,7 +163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRKnXi46CBmdy8T6U7pPe7zkRv+vqD5q9CNqlqxXbws=
+			Wy6TXNqG6ubptcox5JASTBZv5On0epXagAYMlMs/dd8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -366,6 +374,20 @@
 			<key>hash2</key>
 			<data>
 			gc//FN+PvQFNaG/3xrU9G3aeJ5MYAaC/EJYaJN7aCnc=
+			</data>
+		</dict>
+		<key>scrollCollectionCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mo/p9P68bPElxE/28gzyHQF/8G52j/gteLdmYly8cpA=
+			</data>
+		</dict>
+		<key>scrollTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8EI2DDSrk6noUeUTz5aX3uc+lSssGjOkIyijITTzVKs=
 			</data>
 		</dict>
 		<key>segmentTableViewCell.nib</key>

@@ -14,7 +14,7 @@ class thirdTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
     
     var products: productDetail? {
         didSet {
-            loadData(page: 1, limit: 10, query: products?.brand.name ?? "")
+            loadData(page: 1, limit: 6, query: products?.brand.name ?? "")
         }
     }
     
@@ -111,7 +111,7 @@ extension thirdTableViewCell: UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 2
     }
 }
 

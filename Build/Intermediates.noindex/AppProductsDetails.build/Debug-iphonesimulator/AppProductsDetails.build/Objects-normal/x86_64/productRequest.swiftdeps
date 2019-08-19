@@ -13,14 +13,11 @@ depends-top-level:
 - "=="
 - "AssignmentPrecedence"
 - "Error"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - !private "JSONDecoder"
 - "Result"
 - !private "SVProgressHUD"
 - "String"
-- !private "StringLiteralType"
 - "URL"
 - !private "URLSession"
 - "Void"
@@ -194,6 +191,7 @@ depends-member:
 - ["18AppProductsDetails14productRequestC", "URL"]
 - !private ["18AppProductsDetails14productRequestC", "URLSession"]
 - ["18AppProductsDetails14productRequestC", "Void"]
+- ["18AppProductsDetails14productRequestC", "deinit"]
 - ["18AppProductsDetails14productRequestC", "getProduct"]
 - ["18AppProductsDetails14productRequestC", "getProductError"]
 - ["18AppProductsDetails14productRequestC", "init"]
