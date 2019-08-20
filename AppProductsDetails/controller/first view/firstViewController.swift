@@ -97,6 +97,11 @@ class firstViewController: UITableViewController {
             }
             
         }
+        
+        if indexPath.row == self.listOfProducts.count - 2 {
+            self.loadMore()
+        }
+        
         return cell
     }
     
@@ -127,9 +132,13 @@ class firstViewController: UITableViewController {
         
         // Change 10.0 to adjust the distance from bottom
         if maximumOffset - currentOffset <= 10.0 {
-            pageItem += 1
-            loadData(page: pageItem, limit: 10, query: searchItem ?? "")
+            loadMore()
         }
+    }
+    
+    func loadMore() {
+        pageItem += 1
+        loadData(page: pageItem, limit: 10, query: searchItem ?? "")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

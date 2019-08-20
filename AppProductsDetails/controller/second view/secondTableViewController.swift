@@ -20,7 +20,8 @@ class secondTableViewController: UITableViewController {
         tableView.register(UINib(nibName: "thirdTableViewCell", bundle: nil), forCellReuseIdentifier: "thirdCell")
         navigationItem.title = querryString!
         tableView.endEditing(true)
-        tableView.backgroundColor = .purple
+//        tableView.backgroundColor = .purple
+//        tableView.bounces = false
     }
     
     override func viewWillAppear(_ animated: Bool) {

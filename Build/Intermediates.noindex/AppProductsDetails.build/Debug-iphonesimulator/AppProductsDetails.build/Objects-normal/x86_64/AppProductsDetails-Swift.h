@@ -225,6 +225,8 @@ SWIFT_CLASS("_TtC18AppProductsDetails13TableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
 @class UISearchBar;
 @class UITableView;
 @class UIStoryboardSegue;
@@ -257,13 +259,13 @@ SWIFT_CLASS("_TtC18AppProductsDetails19firstViewController")
 @end
 
 @class UIPageControl;
-@class UICollectionView;
 
 SWIFT_CLASS("_TtC18AppProductsDetails17pageTableViewCell")
 @interface pageTableViewCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UIPageControl * _Null_unspecified pageControl;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 - (void)awakeFromNib;
+- (void)runTimedCode;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;

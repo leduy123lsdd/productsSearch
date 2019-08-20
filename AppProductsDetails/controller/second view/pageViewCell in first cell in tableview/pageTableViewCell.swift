@@ -14,9 +14,14 @@ class pageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     var urlString = [imageDetail]()
     
     let width = UIScreen.main.bounds.width
+    var timerChangerImage: Timer?
+    
+    var scrollItemIndex = 0
+    var scrollFoward = false
     
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +34,31 @@ class pageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         pageControl.endEditing(true)
         
         
+        timerChangerImage = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
         
+    }
+    
+    
+    
+    @objc func runTimedCode() {
+        if urlString.count == 0 {
+            return
+        }
+        
+        if scrollItemIndex == urlString.count-1 {
+            scrollFoward = false
+        } else if scrollItemIndex == 0 {
+            scrollFoward = true
+        }
+        
+        if scrollFoward {
+            collectionView.scrollToNextItem()
+            scrollItemIndex += 1
+        } else {
+            collectionView.scrollToPreviousItem()
+            scrollItemIndex -= 1
+        }
+        pageControl.currentPage = scrollItemIndex
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -53,6 +82,7 @@ class pageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+        scrollItemIndex = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -62,6 +92,7 @@ class pageTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         }
         return urlString.count
     }
+    
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -79,5 +110,21 @@ extension pageTableViewCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+}
+
+extension UICollectionView {
+    func scrollToNextItem() {
+        let contentOffset = CGFloat(floor(self.contentOffset.x + self.bounds.size.width))
+        self.moveToFrame(contentOffset: contentOffset)
+    }
+    
+    func scrollToPreviousItem() {
+        let contentOffset = CGFloat(floor(self.contentOffset.x - self.bounds.size.width))
+        self.moveToFrame(contentOffset: contentOffset)
+    }
+    
+    func moveToFrame(contentOffset : CGFloat) {
+        self.setContentOffset(CGPoint(x: contentOffset, y: self.contentOffset.y), animated: true)
     }
 }
